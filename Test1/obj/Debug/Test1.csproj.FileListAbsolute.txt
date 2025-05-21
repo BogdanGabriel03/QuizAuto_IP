@@ -1,0 +1,12 @@
+D:\QuizAuto_IP\Test1\obj\Debug\Test1.csproj.AssemblyReference.cache
+D:\QuizAuto_IP\Test1\obj\Debug\Test1.csproj.CoreCompileInputs.cache
+D:\QuizAuto_IP\Test1\bin\Debug\Test1.exe.config
+D:\QuizAuto_IP\Test1\bin\Debug\Test1.exe
+D:\QuizAuto_IP\Test1\bin\Debug\Test1.pdb
+D:\QuizAuto_IP\Test1\bin\Debug\Controller.dll
+D:\QuizAuto_IP\Test1\bin\Debug\Model.dll
+D:\QuizAuto_IP\Test1\bin\Debug\Controller.pdb
+D:\QuizAuto_IP\Test1\bin\Debug\Model.pdb
+D:\QuizAuto_IP\Test1\obj\Debug\Test1.csproj.Up2Date
+D:\QuizAuto_IP\Test1\obj\Debug\Test1.exe
+D:\QuizAuto_IP\Test1\obj\Debug\Test1.pdb
