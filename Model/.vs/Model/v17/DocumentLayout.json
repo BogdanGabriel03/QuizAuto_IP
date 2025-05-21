@@ -3,24 +3,33 @@
   "WorkspaceRootPath": "D:\\QuizAuto_IP\\Model\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5599865D-A0AF-4059-BE01-91D0CD34AA0B}|..\\Test1\\Test1.csproj|d:\\quizauto_ip\\test1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\quizauto_ip\\homepageforms\\intreabriforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Test1||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\quizauto_ip\\homepageforms\\intreabriforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\quizauto_ip\\homepageforms\\homepageforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\quizauto_ip\\homepageforms\\finalforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\quizauto_ip\\homepageforms\\homepageforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\quizauto_ip\\homepageforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4587FAA-5FF3-4D5D-AA5F-A764C60EDE3A}|..\\Controller\\Controller.csproj|d:\\quizauto_ip\\controller\\chestionarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|d:\\quizauto_ip\\model\\chestionar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|D:\\QuizAuto_IP\\Model\\chestionar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|solutionrelative:chestionar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|d:\\quizauto_ip\\model\\intrebare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|D:\\QuizAuto_IP\\Model\\intrebare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|solutionrelative:intrebare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5599865D-A0AF-4059-BE01-91D0CD34AA0B}|..\\Test1\\Test1.csproj|d:\\quizauto_ip\\test1\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,32 +43,82 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Test1",
-              "DocumentMoniker": "D:\\QuizAuto_IP\\Test1\\Test1.csproj",
-              "RelativeDocumentMoniker": "..\\Test1\\Test1.csproj",
-              "ToolTip": "D:\\QuizAuto_IP\\Test1\\Test1.csproj",
-              "RelativeToolTip": "..\\Test1\\Test1.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-21T15:38:12.753Z",
+              "DocumentIndex": 2,
+              "Title": "HomePageForms.cs",
+              "DocumentMoniker": "D:\\QuizAuto_IP\\HomePageForms\\HomePageForms.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\HomePageForms.cs",
+              "ToolTip": "D:\\QuizAuto_IP\\HomePageForms\\HomePageForms.cs",
+              "RelativeToolTip": "..\\HomePageForms\\HomePageForms.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:37:52.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\QuizAuto_IP\\Test1\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Test1\\Program.cs",
-              "ToolTip": "D:\\QuizAuto_IP\\Test1\\Program.cs",
-              "RelativeToolTip": "..\\Test1\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAYAAAABAAAAAAAAAA==",
+              "Title": "IntreabriForms.cs",
+              "DocumentMoniker": "D:\\QuizAuto_IP\\HomePageForms\\IntreabriForms.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\IntreabriForms.cs",
+              "ToolTip": "D:\\QuizAuto_IP\\HomePageForms\\IntreabriForms.cs",
+              "RelativeToolTip": "..\\HomePageForms\\IntreabriForms.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:34:55.471Z",
+              "WhenOpened": "2025-05-21T16:25:12.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\QuizAuto_IP\\HomePageForms\\Program.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\Program.cs",
+              "ToolTip": "D:\\QuizAuto_IP\\HomePageForms\\Program.cs",
+              "RelativeToolTip": "..\\HomePageForms\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:24:39.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IntreabriForms.cs [Design]",
+              "DocumentMoniker": "D:\\QuizAuto_IP\\HomePageForms\\IntreabriForms.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\IntreabriForms.cs",
+              "ToolTip": "D:\\QuizAuto_IP\\HomePageForms\\IntreabriForms.cs [Design]",
+              "RelativeToolTip": "..\\HomePageForms\\IntreabriForms.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:16:32.234Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FinalForms.cs [Design]",
+              "DocumentMoniker": "D:\\QuizAuto_IP\\HomePageForms\\FinalForms.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\FinalForms.cs",
+              "ToolTip": "D:\\QuizAuto_IP\\HomePageForms\\FinalForms.cs [Design]",
+              "RelativeToolTip": "..\\HomePageForms\\FinalForms.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:15:56.78Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomePageForms.cs [Design]",
+              "DocumentMoniker": "D:\\QuizAuto_IP\\HomePageForms\\HomePageForms.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\HomePageForms.cs",
+              "ToolTip": "D:\\QuizAuto_IP\\HomePageForms\\HomePageForms.cs [Design]",
+              "RelativeToolTip": "..\\HomePageForms\\HomePageForms.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:12:05.914Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ChestionarController.cs",
               "DocumentMoniker": "D:\\QuizAuto_IP\\Controller\\ChestionarController.cs",
               "RelativeDocumentMoniker": "..\\Controller\\ChestionarController.cs",
@@ -67,12 +126,11 @@
               "RelativeToolTip": "..\\Controller\\ChestionarController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:32:26.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T15:32:26.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Chestionar.cs",
               "DocumentMoniker": "D:\\QuizAuto_IP\\Model\\Chestionar.cs",
               "RelativeDocumentMoniker": "Chestionar.cs",
@@ -80,12 +138,11 @@
               "RelativeToolTip": "Chestionar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:31:11.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T15:31:11.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Intrebare.cs",
               "DocumentMoniker": "D:\\QuizAuto_IP\\Model\\Intrebare.cs",
               "RelativeDocumentMoniker": "Intrebare.cs",
@@ -93,8 +150,7 @@
               "RelativeToolTip": "Intrebare.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:28:54.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T15:28:54.775Z"
             }
           ]
         }

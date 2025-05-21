@@ -1,0 +1,12 @@
+D:\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.exe.config
+D:\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.exe
+D:\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.pdb
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.csproj.AssemblyReference.cache
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.FinalForms.resources
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.HomePageForms.resources
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.IntrebariForms.resources
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.Properties.Resources.resources
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.csproj.GenerateResource.cache
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.csproj.CoreCompileInputs.cache
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.exe
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.pdb
