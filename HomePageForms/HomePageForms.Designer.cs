@@ -63,7 +63,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(381, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 35);
+            this.label1.Size = new System.Drawing.Size(232, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = " CHESTIONAR AUTO";
             // 

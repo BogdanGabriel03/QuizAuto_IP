@@ -18,12 +18,12 @@ namespace HomePageForms
         public IntrebariForms()
         {
             InitializeComponent();
-            
+
             AfiseazaIntrebari();
-            
+
         }
 
-        private void FinalForms_Load(object sender, EventArgs e)
+        private void IntrebariForms_Load(object sender, EventArgs e)
         {
         }
 

@@ -3,13 +3,10 @@
   "WorkspaceRootPath": "D:\\Facultate\\IP\\Model\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\finalforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\homepageforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4587FAA-5FF3-4D5D-AA5F-A764C60EDE3A}|..\\Controller\\Controller.csproj|d:\\facultate\\ip\\controller\\chestionarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\homepageforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\finalforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\intrebariforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -18,10 +15,13 @@
       "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\intrebariforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\finalforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D4587FAA-5FF3-4D5D-AA5F-A764C60EDE3A}|..\\Controller\\Controller.csproj|d:\\facultate\\ip\\controller\\chestionarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\homepageforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\finalforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\homepageforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,11 +31,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "IntrebariForms.cs",
+              "DocumentMoniker": "D:\\Facultate\\IP\\HomePageForms\\IntrebariForms.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\IntrebariForms.cs",
+              "ToolTip": "D:\\Facultate\\IP\\HomePageForms\\IntrebariForms.cs",
+              "RelativeToolTip": "..\\HomePageForms\\IntrebariForms.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T21:56:43.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ChestionarController.cs",
               "DocumentMoniker": "D:\\Facultate\\IP\\Controller\\ChestionarController.cs",
               "RelativeDocumentMoniker": "..\\Controller\\ChestionarController.cs",
@@ -48,33 +61,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FinalForms.cs",
               "DocumentMoniker": "D:\\Facultate\\IP\\HomePageForms\\FinalForms.cs",
               "RelativeDocumentMoniker": "..\\HomePageForms\\FinalForms.cs",
               "ToolTip": "D:\\Facultate\\IP\\HomePageForms\\FinalForms.cs",
               "RelativeToolTip": "..\\HomePageForms\\FinalForms.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAD4vygAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T20:33:36.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IntrebariForms.cs",
-              "DocumentMoniker": "D:\\Facultate\\IP\\HomePageForms\\IntrebariForms.cs",
-              "RelativeDocumentMoniker": "..\\HomePageForms\\IntrebariForms.cs",
-              "ToolTip": "D:\\Facultate\\IP\\HomePageForms\\IntrebariForms.cs*",
-              "RelativeToolTip": "..\\HomePageForms\\IntrebariForms.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T09:09:12.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "HomePageForms.cs",
               "DocumentMoniker": "D:\\Facultate\\IP\\HomePageForms\\HomePageForms.cs",
               "RelativeDocumentMoniker": "..\\HomePageForms\\HomePageForms.cs",
@@ -87,7 +87,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "IntrebariForms.cs [Design]",
+              "DocumentMoniker": "D:\\Facultate\\IP\\HomePageForms\\IntrebariForms.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\IntrebariForms.cs",
+              "ToolTip": "D:\\Facultate\\IP\\HomePageForms\\IntrebariForms.cs [Design]",
+              "RelativeToolTip": "..\\HomePageForms\\IntrebariForms.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T21:56:03.738Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FinalForms.cs [Design]",
               "DocumentMoniker": "D:\\Facultate\\IP\\HomePageForms\\FinalForms.cs",
               "RelativeDocumentMoniker": "..\\HomePageForms\\FinalForms.cs",
@@ -99,19 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IntrebariForms.cs [Design]",
-              "DocumentMoniker": "D:\\Facultate\\IP\\HomePageForms\\IntrebariForms.cs",
-              "RelativeDocumentMoniker": "..\\HomePageForms\\IntrebariForms.cs",
-              "ToolTip": "D:\\Facultate\\IP\\HomePageForms\\IntrebariForms.cs [Design]*",
-              "RelativeToolTip": "..\\HomePageForms\\IntrebariForms.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:59:11.984Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "HomePageForms.cs [Design]",
               "DocumentMoniker": "D:\\Facultate\\IP\\HomePageForms\\HomePageForms.cs",
               "RelativeDocumentMoniker": "..\\HomePageForms\\HomePageForms.cs",
