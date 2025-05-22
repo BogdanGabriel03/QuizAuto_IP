@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.IncepeChestionar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // IncepeChestionar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(334, 347);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(327, 97);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Incepe Chestionar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.IncepeChestionar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.IncepeChestionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncepeChestionar.Location = new System.Drawing.Point(334, 347);
+            this.IncepeChestionar.Name = "IncepeChestionar";
+            this.IncepeChestionar.Size = new System.Drawing.Size(327, 97);
+            this.IncepeChestionar.TabIndex = 0;
+            this.IncepeChestionar.Text = "Incepe Chestionar";
+            this.IncepeChestionar.UseVisualStyleBackColor = false;
+            this.IncepeChestionar.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -75,7 +75,7 @@
             this.ClientSize = new System.Drawing.Size(931, 601);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.IncepeChestionar);
             this.Name = "HomePageForms";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -85,7 +85,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button IncepeChestionar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
     }

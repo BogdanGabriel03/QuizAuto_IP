@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IntreabriForms.cs">
+    <Compile Include="FinalForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IntreabriForms.Designer.cs">
-      <DependentUpon>IntreabriForms.cs</DependentUpon>
+    <Compile Include="FinalForms.Designer.cs">
+      <DependentUpon>FinalForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntrebariForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntrebariForms.Designer.cs">
+      <DependentUpon>IntrebariForms.cs</DependentUpon>
     </Compile>
     <Compile Include="HomePageForms.cs">
       <SubType>Form</SubType>
@@ -58,22 +64,16 @@
     <Compile Include="HomePageForms.Designer.cs">
       <DependentUpon>HomePageForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="FinalForms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FinalForms.Designer.cs">
-      <DependentUpon>FinalForms.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="IntreabriForms.resx">
-      <DependentUpon>IntreabriForms.cs</DependentUpon>
+    <EmbeddedResource Include="FinalForms.resx">
+      <DependentUpon>FinalForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntrebariForms.resx">
+      <DependentUpon>IntrebariForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePageForms.resx">
       <DependentUpon>HomePageForms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FinalForms.resx">
-      <DependentUpon>FinalForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

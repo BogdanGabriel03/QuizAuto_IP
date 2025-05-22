@@ -15,9 +15,7 @@ D:\Facultate\IP\HomePageForms\bin\Debug\HomePageForms.exe
 D:\Facultate\IP\HomePageForms\bin\Debug\HomePageForms.pdb
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.csproj.AssemblyReference.cache
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.exe.config
-D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.IntreabriForms.resources
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.HomePageForms.resources
-D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.FinalForms.resources
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.Properties.Resources.resources
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.csproj.GenerateResource.cache
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.csproj.CoreCompileInputs.cache
@@ -28,3 +26,5 @@ D:\Facultate\IP\HomePageForms\bin\Debug\Model.dll
 D:\Facultate\IP\HomePageForms\bin\Debug\Controller.pdb
 D:\Facultate\IP\HomePageForms\bin\Debug\Model.pdb
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePage.A9DB6D33.Up2Date
+D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.IntrebariForms.resources
+D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.FinalForms.resources

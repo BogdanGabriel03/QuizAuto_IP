@@ -24,7 +24,7 @@ namespace HomePageForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FinalForms f2 = new FinalForms();
+            IntrebariForms f2 = new IntrebariForms();
             f2.Show();
             this.Close();
         }
