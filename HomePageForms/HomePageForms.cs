@@ -28,5 +28,10 @@ namespace HomePageForms
             f2.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

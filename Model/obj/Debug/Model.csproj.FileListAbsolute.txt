@@ -4,3 +4,9 @@ D:\QuizAuto_IP\Model\obj\Debug\Model.csproj.AssemblyReference.cache
 D:\QuizAuto_IP\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 D:\QuizAuto_IP\Model\obj\Debug\Model.dll
 D:\QuizAuto_IP\Model\obj\Debug\Model.pdb
+D:\Facultate\IP\Model\bin\Debug\Model.dll
+D:\Facultate\IP\Model\bin\Debug\Model.pdb
+D:\Facultate\IP\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Facultate\IP\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Facultate\IP\Model\obj\Debug\Model.dll
+D:\Facultate\IP\Model\obj\Debug\Model.pdb

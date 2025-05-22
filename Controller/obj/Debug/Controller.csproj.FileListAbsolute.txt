@@ -7,3 +7,12 @@ D:\QuizAuto_IP\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
 D:\QuizAuto_IP\Controller\obj\Debug\Controller.csproj.Up2Date
 D:\QuizAuto_IP\Controller\obj\Debug\Controller.dll
 D:\QuizAuto_IP\Controller\obj\Debug\Controller.pdb
+D:\Facultate\IP\Controller\bin\Debug\Controller.dll
+D:\Facultate\IP\Controller\bin\Debug\Controller.pdb
+D:\Facultate\IP\Controller\bin\Debug\Model.dll
+D:\Facultate\IP\Controller\bin\Debug\Model.pdb
+D:\Facultate\IP\Controller\obj\Debug\Controller.csproj.AssemblyReference.cache
+D:\Facultate\IP\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+D:\Facultate\IP\Controller\obj\Debug\Controller.csproj.Up2Date
+D:\Facultate\IP\Controller\obj\Debug\Controller.dll
+D:\Facultate\IP\Controller\obj\Debug\Controller.pdb
