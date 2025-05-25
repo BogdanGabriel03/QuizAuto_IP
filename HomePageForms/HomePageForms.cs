@@ -31,7 +31,8 @@ namespace HomePageForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            LogInForms f5 = new LogInForms();
+            f5.Show();
         }
     }
 }

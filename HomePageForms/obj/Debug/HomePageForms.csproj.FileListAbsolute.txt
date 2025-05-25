@@ -28,3 +28,4 @@ D:\Facultate\IP\HomePageForms\bin\Debug\Model.pdb
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePage.A9DB6D33.Up2Date
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.IntrebariForms.resources
 D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.FinalForms.resources
+D:\Facultate\IP\HomePageForms\obj\Debug\HomePageForms.LogInForms.resources
