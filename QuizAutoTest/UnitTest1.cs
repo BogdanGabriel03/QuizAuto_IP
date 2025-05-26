@@ -4,6 +4,8 @@ using Model;
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.IO;
+
 
 namespace QuizAutoTest
 {
@@ -15,8 +17,7 @@ namespace QuizAutoTest
         {
             var controller = new ChestionarController();
             var intrebare = controller.GetIntrebareCurenta();
-
-            Assert.IsNotNull(intrebare, "Întrebarea curentă nu trebuie să fie null la început.");
+            Assert.IsNotNull(intrebare);
         }
 
         [TestMethod]
@@ -24,211 +25,194 @@ namespace QuizAutoTest
         {
             var controller = new ChestionarController();
             var intrebare = controller.GetIntrebareCurenta();
-
-            int[] raspunsCorect = intrebare.VarianteCorecte;
-            controller.TrimiteRaspuns(raspunsCorect);
-
-            Assert.AreEqual(1, controller.GetScor(), "Scorul trebuie să fie 1 după un răspuns corect.");
+            controller.TrimiteRaspuns(intrebare.VarianteCorecte);
+            Assert.AreEqual(1, controller.GetCorect());
         }
 
         [TestMethod]
-        public void TestTrimiteRaspunsGresitNuModificaScorul()
+        public void TestTrimiteRaspunsGresitCresteGresit()
         {
             var controller = new ChestionarController();
             var intrebare = controller.GetIntrebareCurenta();
 
-            int[] raspunsGresit = Enumerable.Range(0, intrebare.Variante.Length)
-                                            .Where(i => !intrebare.VarianteCorecte.Contains(i))
-                                            .ToArray();
+            int[] gresit = Enumerable.Range(0, intrebare.Variante.Length)
+                                     .Where(i => !intrebare.VarianteCorecte.Contains(i))
+                                     .ToArray();
 
-            // Dacă toate variantele sunt corecte, simulăm o greșeală cu index invalid
-            if (raspunsGresit.Length == 0)
-                raspunsGresit = new int[] { (intrebare.VarianteCorecte.Max() + 1) % intrebare.Variante.Length };
+            if (gresit.Length == 0)
+                gresit = new int[] { (intrebare.VarianteCorecte.Max() + 1) % intrebare.Variante.Length };
 
-            controller.TrimiteRaspuns(raspunsGresit);
+            controller.TrimiteRaspuns(gresit);
 
-            Assert.AreEqual(0, controller.GetScor(), "Scorul trebuie să rămână 0 după un răspuns greșit.");
+            Assert.AreEqual(1, controller.GetGresit());
         }
 
         [TestMethod]
-        public void TestParcurgereToateIntrebarile()
+        public void TestInitialScorZero()
         {
             var controller = new ChestionarController();
-            int total = 0;
-
-            while (!controller.EsteTerminat())
-            {
-                var intrebare = controller.GetIntrebareCurenta();
-                Assert.IsNotNull(intrebare, "Întrebarea nu trebuie să fie null înainte de terminare.");
-
-                controller.TrimiteRaspuns(intrebare.VarianteCorecte);
-                total++;
-            }
-
-            Assert.AreEqual(total, controller.GetScor(), "Scorul trebuie să fie egal cu numărul de întrebări dacă toate au răspunsuri corecte.");
+            Assert.AreEqual(0, controller.GetCorect());
+            Assert.AreEqual(0, controller.GetGresit());
         }
 
-        [TestMethod]
-        public void TestDupaTerminareGetIntrebareCurentaReturneazaNull()
-        {
-            var controller = new ChestionarController();
-
-            while (!controller.EsteTerminat())
-            {
-                var intrebare = controller.GetIntrebareCurenta();
-                controller.TrimiteRaspuns(intrebare.VarianteCorecte);
-            }
-
-            Assert.IsNull(controller.GetIntrebareCurenta(), "După terminare, întrebarea curentă trebuie să fie null.");
-        }
-        [TestMethod]
-        public void TestTrimiteRaspunsDupaTerminareNuAfecteazaScorul()
-        {
-            var controller = new ChestionarController();
-
-            // Răspunde corect la toate întrebările
-            while (!controller.EsteTerminat())
-            {
-                var intrebare = controller.GetIntrebareCurenta();
-                controller.TrimiteRaspuns(intrebare.VarianteCorecte);
-            }
-
-            int scorFinal = controller.GetScor();
-
-            // Încearcă să trimită un răspuns în plus
-            controller.TrimiteRaspuns(new int[] { 0 });
-
-            Assert.AreEqual(scorFinal, controller.GetScor(), "Scorul nu trebuie să crească după ce chestionarul este terminat.");
-        }
-        [TestMethod]
-        public void TestScorInitialZero()
-        {
-            var controller = new ChestionarController();
-            Assert.AreEqual(0, controller.GetScor(), "Scorul inițial trebuie să fie 0.");
-        }
-        [TestMethod]
-        public void TestToateIntrebarileAuTreiVariante()
-        {
-            var controller = new ChestionarController();
-            while (!controller.EsteTerminat())
-            {
-                var intrebare = controller.GetIntrebareCurenta();
-                Assert.AreEqual(3, intrebare.Variante.Length, "Fiecare întrebare trebuie să aibă exact 3 variante.");
-                controller.TrimiteRaspuns(intrebare.VarianteCorecte);
-            }
-        }
-        [TestMethod]
-        public void TestRaspunsCorectIndiferentDeOrdine()
-        {
-            var controller = new ChestionarController();
-            var intrebare = controller.GetIntrebareCurenta();
-
-            var raspunsAmestecat = intrebare.VarianteCorecte.Reverse().ToArray();  // inversăm ordinea
-            controller.TrimiteRaspuns(raspunsAmestecat);
-
-            Assert.AreEqual(1, controller.GetScor(), "Ordinea răspunsurilor corecte nu trebuie să influențeze scorul.");
-        }
-        [TestMethod]
-        public void TestRaspunsGolNuCresteScorul()
-        {
-            var controller = new ChestionarController();
-            controller.TrimiteRaspuns(new int[] { });  // fără răspuns
-
-            Assert.AreEqual(0, controller.GetScor(), "Un răspuns gol nu trebuie să crească scorul.");
-        }
-        [TestMethod]
-        public void TestInitializareNuAruncaExceptii()
-        {
-            try
-            {
-                var controller = new ChestionarController();
-            }
-            catch (Exception ex)
-            {
-                Assert.Fail("Inițializarea nu trebuie să arunce excepții: " + ex.Message);
-            }
-        }
-        [TestMethod]
-        public void TestScorMaximEgalCuNumarIntrebari()
-        {
-            var controller = new ChestionarController();
-            int nrIntrebari = 0;
-
-            while (!controller.EsteTerminat())
-            {
-                controller.TrimiteRaspuns(controller.GetIntrebareCurenta().VarianteCorecte);
-                nrIntrebari++;
-            }
-
-            Assert.AreEqual(nrIntrebari, controller.GetScor(), "Scorul maxim trebuie să fie egal cu numărul de întrebări.");
-        }
-        [TestMethod]
-        public void TestIntrebareCurentaDupaTerminareEsteNull()
-        {
-            var controller = new ChestionarController();
-            while (!controller.EsteTerminat())
-                controller.TrimiteRaspuns(new int[] { });
-
-            Assert.IsNull(controller.GetIntrebareCurenta());
-        }
-        [TestMethod]
-        public void TestIntrebareCurentaInitialaNuEsteNull()
-        {
-            var controller = new ChestionarController();
-            Assert.IsNotNull(controller.GetIntrebareCurenta());
-        }
         [TestMethod]
         public void TestRaspunsIncorectNuAruncaExceptie()
         {
             var controller = new ChestionarController();
-            var intrebare = controller.GetIntrebareCurenta();
-
             try
             {
-                controller.TrimiteRaspuns(new int[] { 99 }); // Index invalid
+                controller.TrimiteRaspuns(new int[] { 99 });
                 Assert.IsTrue(true);
             }
             catch
             {
-                Assert.Fail("Nu trebuie să se arunce excepție la răspuns invalid.");
+                Assert.Fail("Răspunsul invalid nu ar trebui să arunce excepție.");
             }
         }
-        [TestMethod]
-        public void TestChestionarInitialScorZero()
-        {
-            var controller = new ChestionarController();
-            Assert.AreEqual(0, controller.GetScor());
-        }
-        [TestMethod]
-        public void TestIncrementScor()
-        {
-            var chestionar = new Chestionar(new Intrebare[0]);
-            chestionar.IncrementScor();
-            Assert.AreEqual(1, chestionar.Scor);
-        }
-        [TestMethod]
-        public void TestParcurgereIntrebariInOrdine()
-        {
-            var controller = new ChestionarController();
-            var enunturi = new List<string>();
 
-            while (!controller.EsteTerminat())
-            {
-                enunturi.Add(controller.GetIntrebareCurenta().Text);
-                controller.TrimiteRaspuns(new int[] { });
-            }
-
-            Assert.IsTrue(enunturi.Count > 0);
-        }
         [TestMethod]
-        public void TestVarianteIntrebareSuntSetate()
+        public void TestRaspunsDuplicatEsteInvalid()
         {
             var controller = new ChestionarController();
             var intrebare = controller.GetIntrebareCurenta();
-            Assert.AreEqual(3, intrebare.Variante.Length);
+            var duplicat = intrebare.VarianteCorecte.Concat(intrebare.VarianteCorecte).ToArray();
+            controller.TrimiteRaspuns(duplicat);
+
+            Assert.AreEqual(0, controller.GetCorect());
         }
+
         [TestMethod]
-        public void TestRaspunsPartialIncorect()
+        public void TestToateIntrebarileAu3Variante()
+        {
+            var controller = new ChestionarController();
+            while (!controller.EsteTerminat())
+            {
+                var intrebare = controller.GetIntrebareCurenta();
+                Assert.AreEqual(3, intrebare.Variante.Length);
+                controller.TrimiteRaspuns(intrebare.VarianteCorecte);
+            }
+        }
+
+        [TestMethod]
+        public void TestIntrebariUnice()
+        {
+            var controller = new ChestionarController();
+            var enunturi = new HashSet<string>();
+            while (!controller.EsteTerminat())
+            {
+                var intrebare = controller.GetIntrebareCurenta();
+                enunturi.Add(intrebare.Text);
+                controller.TrimiteRaspuns(intrebare.VarianteCorecte);
+            }
+
+            Assert.IsTrue(enunturi.Count > 1);
+        }
+
+        [TestMethod]
+        public void TestIndexuriVarianteCorecteInInterval()
+        {
+            var controller = new ChestionarController();
+            while (!controller.EsteTerminat())
+            {
+                var intrebare = controller.GetIntrebareCurenta();
+                foreach (var index in intrebare.VarianteCorecte)
+                {
+                    Assert.IsTrue(index >= 0 && index < intrebare.Variante.Length);
+                }
+                controller.TrimiteRaspuns(intrebare.VarianteCorecte);
+            }
+        }
+
+        [TestMethod]
+        public void TestIntrebareCurentaDevineNullDupaTerminare()
+        {
+            var controller = new ChestionarController();
+            while (!controller.EsteTerminat())
+            {
+                controller.TrimiteRaspuns(controller.GetIntrebareCurenta().VarianteCorecte);
+            }
+
+            Assert.IsNull(controller.GetIntrebareCurenta());
+        }
+
+        [TestMethod]
+        public void TestIncrementGresitDacaRaspunsGresit()
+        {
+            var controller = new ChestionarController();
+            var intrebare = controller.GetIntrebareCurenta();
+            var gresit = new int[] { (intrebare.VarianteCorecte.Max() + 1) % 3 };
+
+            int gresitInitial = controller.GetGresit();
+            controller.TrimiteRaspuns(gresit);
+
+            Assert.AreEqual(gresitInitial + 1, controller.GetGresit());
+        }
+
+        [TestMethod]
+        public void TestGetCorectInitialZero()
+        {
+            var controller = new ChestionarController();
+            Assert.AreEqual(0, controller.GetCorect());
+        }
+
+        [TestMethod]
+        public void TestGetGresitInitialZero()
+        {
+            var controller = new ChestionarController();
+            Assert.AreEqual(0, controller.GetGresit());
+        }
+
+        [TestMethod]
+        public void TestRaspunsInvalidNegativ()
+        {
+            var controller = new ChestionarController();
+            var intrebare = controller.GetIntrebareCurenta();
+
+            try
+            {
+                controller.TrimiteRaspuns(new int[] { -1 });
+                Assert.IsTrue(true);
+            }
+            catch
+            {
+                Assert.Fail("Răspunsul negativ nu trebuie să arunce excepții.");
+            }
+        }
+
+        [TestMethod]
+        public void TestClearListReseteazaIntrebari()
+        {
+            var controller = new ChestionarController();
+            var intrebare1 = controller.GetIntrebareCurenta();
+            controller.TrimiteRaspuns(new int[] { });
+
+            controller.ClearList();
+            var intrebare2 = controller.GetIntrebareCurenta();
+
+            Assert.IsNotNull(intrebare2);
+        }
+
+        [TestMethod]
+        public void TestToateIntrebarileAuEnunt()
+        {
+            var controller = new ChestionarController();
+            while (!controller.EsteTerminat())
+            {
+                var intrebare = controller.GetIntrebareCurenta();
+                Assert.IsFalse(string.IsNullOrWhiteSpace(intrebare.Text));
+                controller.TrimiteRaspuns(new int[] { });
+            }
+        }
+
+        [TestMethod]
+        public void TestFisierContineIntrebari()
+        {
+            var controller = new ChestionarController();
+            Assert.IsNotNull(controller.GetIntrebareCurenta());
+        }
+
+        [TestMethod]
+        public void TestRaspunsPartialGresit()
         {
             var controller = new ChestionarController();
             var intrebare = controller.GetIntrebareCurenta();
@@ -236,115 +220,254 @@ namespace QuizAutoTest
             if (intrebare.VarianteCorecte.Length > 1)
             {
                 controller.TrimiteRaspuns(new int[] { intrebare.VarianteCorecte[0] });
-                Assert.AreEqual(0, controller.GetScor());
+                Assert.AreEqual(0, controller.GetCorect());
+                Assert.AreEqual(1, controller.GetGresit());
             }
         }
+
         [TestMethod]
-        public void TestTrimiteRaspunsGresit()
-        {
-            var controller = new ChestionarController();
-            controller.TrimiteRaspuns(new int[] { 1 }); // presupunem greșit
-            Assert.AreEqual(0, controller.GetScor());
-        }
-        [TestMethod]
-        public void TestChestionarTerminare()
+        public void TestRaspunsRandomInvalidNuAfecteazaExceptii()
         {
             var controller = new ChestionarController();
 
-            int count = 0;
+            try
+            {
+                controller.TrimiteRaspuns(new int[] { 100 });
+                Assert.IsTrue(true);
+            }
+            catch
+            {
+                Assert.Fail("TrimiteRaspuns nu trebuie să arunce excepție pentru index mare.");
+            }
+        }
+
+        [TestMethod]
+        public void TestGetIntrebareCurentaInainteDeStart()
+        {
+            var controller = new ChestionarController();
+            var intrebare = controller.GetIntrebareCurenta();
+            Assert.IsNotNull(intrebare);
+        }
+
+        [TestMethod]
+        public void TestIntrebariAuMinimUnRaspunsCorect()
+        {
+            var controller = new ChestionarController();
+
             while (!controller.EsteTerminat())
             {
+                var intrebare = controller.GetIntrebareCurenta();
+                Assert.IsTrue(intrebare.VarianteCorecte.Length >= 1);
                 controller.TrimiteRaspuns(new int[] { });
-                count++;
             }
-
-            Assert.AreEqual(count, controller.GetScor() + (count - controller.GetScor()));
         }
-        [TestMethod]
-        public void TestRaspunsInPlusNuModificaScorul()
-        {
-            var controller = new ChestionarController();
-            while (!controller.EsteTerminat())
-                controller.TrimiteRaspuns(controller.GetIntrebareCurenta().VarianteCorecte);
 
-            int scorFinal = controller.GetScor();
-            controller.TrimiteRaspuns(new int[] { 0 }); 
-            Assert.AreEqual(scorFinal, controller.GetScor());
-        }
         [TestMethod]
-        public void TestIntrebariUnice()
+        public void TestToateIntrebarileSuntDistincte()
         {
             var controller = new ChestionarController();
             var enunturi = new HashSet<string>();
 
             while (!controller.EsteTerminat())
             {
-                enunturi.Add(controller.GetIntrebareCurenta().Text);
+                var intrebare = controller.GetIntrebareCurenta();
+                Assert.IsFalse(enunturi.Contains(intrebare.Text));
+                enunturi.Add(intrebare.Text);
                 controller.TrimiteRaspuns(new int[] { });
             }
-
-            Assert.IsTrue(enunturi.Count > 1);
         }
+
         [TestMethod]
-        public void TestIntrebariAuRaspunsCorect()
+        public void TestVarianteCorecteSuntIndexuriValide()
         {
             var controller = new ChestionarController();
             while (!controller.EsteTerminat())
             {
-                var corecte = controller.GetIntrebareCurenta().VarianteCorecte;
-                Assert.IsTrue(corecte.Length >= 1);
+                var intrebare = controller.GetIntrebareCurenta();
+                foreach (int idx in intrebare.VarianteCorecte)
+                    Assert.IsTrue(idx >= 0 && idx < intrebare.Variante.Length);
                 controller.TrimiteRaspuns(new int[] { });
             }
         }
+
         [TestMethod]
-        public void TestIndexuriVarianteCorecteInInterval()
+        public void TestFisierAreFormatValid()
         {
-            var controller = new ChestionarController();
-            while (!controller.EsteTerminat())
-            {
-                foreach (var index in controller.GetIntrebareCurenta().VarianteCorecte)
-                    Assert.IsTrue(index >= 0 && index <= 2);
-                controller.TrimiteRaspuns(new int[] { });
-            }
+            var path = "intrebari.txt";
+            var linii = File.ReadAllLines(path);
+            Assert.IsTrue(linii.Length % 5 == 0, "Fișierul trebuie să conțină multipli de 5 linii.");
         }
         [TestMethod]
-        public void TestRaspunsDuplicatEsteInvalid()
-        {
-            var controller = new ChestionarController();
-            var corect = controller.GetIntrebareCurenta().VarianteCorecte;
-
-            var duplicat = corect.Concat(corect).ToArray(); 
-            controller.TrimiteRaspuns(duplicat);
-
-            Assert.AreEqual(0, controller.GetScor());
-        }
-        [TestMethod]
-        public void TestChestionarNuEFinalizatLaStart()
-        {
-            var controller = new ChestionarController();
-            Assert.IsFalse(controller.EsteTerminat());
-        }
-        [TestMethod]
-        public void TestIndexCresteDupaFiecareRaspuns()
-        {
-            var controller = new ChestionarController();
-            int index = 0;
-
-            while (!controller.EsteTerminat())
-            {
-                controller.TrimiteRaspuns(new int[] { });
-                index++;
-            }
-
-            Assert.AreEqual(index, controller.GetScor() + (index - controller.GetScor()));
-        }
-        [TestMethod]
-        public void TestCitesteIntrebariDinFisierCorect()
+        public void TestIntrebareCurentaSeModificaDupaRaspuns()
         {
             var controller = new ChestionarController();
             var prima = controller.GetIntrebareCurenta();
-            Assert.IsFalse(string.IsNullOrWhiteSpace(prima.Text));
+            controller.TrimiteRaspuns(prima.VarianteCorecte);
+            var aDoua = controller.GetIntrebareCurenta();
+
+            Assert.AreNotEqual(prima.Text, aDoua?.Text);
         }
+
+        [TestMethod]
+        public void TestTrimiteRaspunsGolEsteConsideratGresit()
+        {
+            var controller = new ChestionarController();
+            controller.TrimiteRaspuns(new int[0]);
+            Assert.AreEqual(1, controller.GetGresit());
+        }
+
+        [TestMethod]
+        public void TestVarianteCorecteNuAuDuplicate()
+        {
+            var controller = new ChestionarController();
+            var intrebare = controller.GetIntrebareCurenta();
+            var distincte = intrebare.VarianteCorecte.Distinct().Count();
+
+            Assert.AreEqual(intrebare.VarianteCorecte.Length, distincte);
+        }
+
+        [TestMethod]
+        public void TestToateVarianteleSuntDiferite()
+        {
+            var controller = new ChestionarController();
+            var intrebare = controller.GetIntrebareCurenta();
+            var variante = intrebare.Variante;
+
+            Assert.AreEqual(variante.Length, variante.Distinct().Count());
+        }
+
+        [TestMethod]
+        public void TestEnuntulNuEsteGolSauNull()
+        {
+            var controller = new ChestionarController();
+            var intrebare = controller.GetIntrebareCurenta();
+
+            Assert.IsFalse(string.IsNullOrWhiteSpace(intrebare.Text));
+        }
+
+        [TestMethod]
+        public void TestNuSePotTrimiteIndexuriNegative()
+        {
+            var controller = new ChestionarController();
+            controller.TrimiteRaspuns(new int[] { -1 });
+
+            Assert.AreEqual(1, controller.GetGresit());
+        }
+
+        [TestMethod]
+        public void TestLaFinalListaIntrebariSeTermina()
+        {
+            var controller = new ChestionarController();
+            while (!controller.EsteTerminat())
+                controller.TrimiteRaspuns(controller.GetIntrebareCurenta().VarianteCorecte);
+
+            Assert.IsNull(controller.GetIntrebareCurenta());
+        }
+
+        [TestMethod]
+        public void TestIntrebareCurentaEsteNullDupaTerminare()
+        {
+            var controller = new ChestionarController();
+            while (!controller.EsteTerminat())
+                controller.TrimiteRaspuns(controller.GetIntrebareCurenta().VarianteCorecte);
+
+            Assert.IsNull(controller.GetIntrebareCurenta());
+        }
+
+        [TestMethod]
+        public void TestTrimiteRaspunsDupaFinalNuAfecteazaScorul()
+        {
+            var controller = new ChestionarController();
+            while (!controller.EsteTerminat())
+                controller.TrimiteRaspuns(controller.GetIntrebareCurenta().VarianteCorecte);
+
+            int scor = controller.GetCorect();
+            controller.TrimiteRaspuns(new int[] { 0 });
+            Assert.AreEqual(scor, controller.GetCorect());
+        }
+
+        [TestMethod]
+        public void TestTrimiteRaspunsCuIndexMareNuArunca()
+        {
+            var controller = new ChestionarController();
+
+            try
+            {
+                controller.TrimiteRaspuns(new int[] { 100 });
+                Assert.IsTrue(true);
+            }
+            catch
+            {
+                Assert.Fail("TrimiteRaspuns nu trebuie să arunce excepție pentru index mare.");
+            }
+        }
+
+        [TestMethod]
+        public void TestTrimiteRaspunsCuIndexNegativNuArunca()
+        {
+            var controller = new ChestionarController();
+
+            try
+            {
+                controller.TrimiteRaspuns(new int[] { -10 });
+                Assert.IsTrue(true);
+            }
+            catch
+            {
+                Assert.Fail("TrimiteRaspuns nu trebuie să arunce excepție pentru index negativ.");
+            }
+        }
+
+        [TestMethod]
+        public void TestTrimiteRaspunsCuIndexInvalidNuCresteScorul()
+        {
+            var controller = new ChestionarController();
+            controller.TrimiteRaspuns(new int[] { 5 }); // invalid
+            Assert.AreEqual(0, controller.GetCorect());
+        }
+
+        [TestMethod]
+        public void TestConstructorFaraParametruIncarcaImplicit()
+        {
+            var controller = new ChestionarController();
+            Assert.IsNotNull(controller.GetIntrebareCurenta());
+        }
+
+        [TestMethod]
+        public void TestIntrebareAreMinimUnRaspunsCorect()
+        {
+            var controller = new ChestionarController();
+            var intrebare = controller.GetIntrebareCurenta();
+            Assert.IsTrue(intrebare.VarianteCorecte.Length >= 1);
+        }
+
+        [TestMethod]
+        public void TestVarianteSuntPopulareDiferite()
+        {
+            var controller = new ChestionarController();
+            var variante = controller.GetIntrebareCurenta().Variante;
+            Assert.AreEqual(3, variante.Distinct().Count());
+        }
+
+        [TestMethod]
+        public void TestRaspunsPartialGresitEsteGresit()
+        {
+            var controller = new ChestionarController();
+            var intrebare = controller.GetIntrebareCurenta();
+
+            if (intrebare.VarianteCorecte.Length > 1)
+            {
+                var partial = intrebare.VarianteCorecte.Take(1).ToArray();
+                controller.TrimiteRaspuns(partial);
+                Assert.AreEqual(1, controller.GetGresit());
+            }
+            else
+            {
+                Assert.Inconclusive("Întrebarea nu are suficiente răspunsuri corecte pentru test.");
+            }
+        }
+
 
     }
 }
+

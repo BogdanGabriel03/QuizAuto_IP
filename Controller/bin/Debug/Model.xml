@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Model</name>
+    </assembly>
+    <members>
+        <member name="F:Model.Chestionar._intrebari">
+            <summary>
+            intrebari = lista de întrebări
+            _corect/_greșit = counter pentru numărul de răspunsuri corecte/greșite
+            </summary>
+        </member>
+        <member name="M:Model.Chestionar.#ctor(Model.Intrebare[])">
+            <summary>
+            Setează valoarea inițială a contorilor și inițializează vectorul de întrebări
+            </summary>
+            <param name="intrebari"></param>
+        </member>
+        <member name="M:Model.Chestionar.IncrementCorect">
+            <summary>
+            modifică numărul de răspunsuri corecte/greșite
+            </summary>
+        </member>
+        <member name="P:Model.Chestionar.Intrebari">
+            <summary>
+            Getters pentru toți membrii privați și setters pentru contoare
+            </summary>
+        </member>
+        <member name="T:Model.Intrebare">
+            <summary>
+            Clasă responsabilă cu păstrarea informațiilor despre fiecare întrebare în parte
+            </summary>
+        </member>
+        <member name="F:Model.Intrebare.text">
+            <summary>
+            Membrii privați ai clasei:
+                - text = textul întrebării
+                - variante = vector de stringuri ce conține variantele de răspuns
+                - varianteCorecte = vector ce conține indecșii răspunsurilor corecte
+            </summary>
+        </member>
+        <member name="M:Model.Intrebare.#ctor(System.String,System.String[],System.Int32[])">
+            <summary>
+            Constructorul clasei, cu rol de a seta informațiile private
+            </summary>
+            <param name="text"></param>
+            <param name="variante"></param>
+            <param name="varianteCorecte"></param>
+        </member>
+        <member name="P:Model.Intrebare.Text">
+            <summary>
+            Getters pentru fiecare dintre variabilele private
+            </summary>
+        </member>
+    </members>
+</doc>

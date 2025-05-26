@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HomePageForms</name>
+    </assembly>
+    <members>
+        <member name="F:HomePageForms.FinalForms._controller">
+            <summary>
+            Instanță a controller-ului
+            </summary>
+        </member>
+        <member name="M:HomePageForms.FinalForms.#ctor(Controller.ChestionarController)">
+            <summary>
+            Constructorul clasei FinalForms inițializează variabila privată, componentele de pe pagina și afișează prima întrebare
+            </summary>
+            <param name="controller"></param>
+        </member>
+        <member name="M:HomePageForms.FinalForms.AfiseazaRezultat">
+            <summary>
+            Funcție responsabilă de afișarea rezultatului obșinut de utilizator
+            </summary>
+        </member>
+        <member name="M:HomePageForms.FinalForms.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Funcția de callback a butonului care îl va redirecționa pe utilizator pe pagina acasă, și resetează scorul
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:HomePageForms.FinalForms.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HomePageForms.FinalForms.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HomePageForms.FinalForms.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HomePageForms.HomePageForms.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+             Load chestionar button
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HomePageForms.HomePageForms.button1_Click_1(System.Object,System.EventArgs)">
+            Help button - 
+        </member>
+        <member name="F:HomePageForms.HomePageForms.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HomePageForms.HomePageForms.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HomePageForms.HomePageForms.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HomePageForms.IntrebariForms._controller">
+            <summary>
+            _controller = instanță a controller-ului
+            _timer = control de tip timer
+            _remainingTIme = textul pentru a fi afișat pe interfață
+            </summary>
+        </member>
+        <member name="M:HomePageForms.IntrebariForms.#ctor(Controller.ChestionarController)">
+            <summary>
+            Constructorul instanțiază controller-ul, creează controlul de tip timer și îl pornește
+            </summary>
+            <param name="controller"></param>
+        </member>
+        <member name="M:HomePageForms.IntrebariForms.AfiseazaIntrebari(System.String)">
+            <summary>
+            Afișează următoarea întrebare și setează valoarea timerului
+            </summary>
+            <param name="timerValue"></param>
+        </member>
+        <member name="M:HomePageForms.IntrebariForms.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Trimite răspunsurile și verifică dacă utilizatorul a trecut de ultima întrebare
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HomePageForms.IntrebariForms.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Funcția de callback a timerului se apelează la o secundă și verifică de ficare dată dacă timpul a expirat, caz în care setează un flag
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:HomePageForms.IntrebariForms.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HomePageForms.IntrebariForms.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HomePageForms.IntrebariForms.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HomePageForms.LogInForms.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HomePageForms.LogInForms.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HomePageForms.LogInForms.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HomePageForms.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:HomePageForms.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:HomePageForms.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

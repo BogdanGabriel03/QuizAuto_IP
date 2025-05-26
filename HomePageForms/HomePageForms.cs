@@ -13,13 +13,19 @@ namespace HomePageForms
 {
     public partial class HomePageForms : Form
     {
+        #region Private Member variables
         private ChestionarController _controller;
+        #endregion
+
+        #region Public Methods
         public HomePageForms(ChestionarController controller)
         {
             InitializeComponent();
             _controller = controller;
         }
+        #endregion
 
+        #region Private Methods
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -49,5 +55,6 @@ namespace HomePageForms
         {
             Help.ShowHelp(this, "help.chm");
         }
+        #endregion
     }
 }

@@ -47,3 +47,6 @@ E:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.csproj.CoreCompileInputs.ca
 E:\QuizAuto_IP\HomePageForms\obj\Debug\HomePage.A9DB6D33.Up2Date
 E:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.exe
 E:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.pdb
+E:\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.xml
+E:\QuizAuto_IP\HomePageForms\bin\Debug\Controller.xml
+E:\QuizAuto_IP\HomePageForms\bin\Debug\Model.xml

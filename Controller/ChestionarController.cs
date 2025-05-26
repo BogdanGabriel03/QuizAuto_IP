@@ -8,11 +8,16 @@ namespace Controller
 {
     public class ChestionarController
     {
+        #region Private Member Variables
         private Chestionar chestionar;
         private int indexIntrebareCurenta;
         private string caleFisier = "intrebari.txt";
         private Random rand;
         private List<int> generated;
+        private bool timeUp;
+        #endregion
+
+        #region Public Methods
         public ChestionarController()
         {
             Intrebare[] intrebari = CitesteIntrebariDinFisier(caleFisier);
@@ -56,7 +61,7 @@ namespace Controller
                 chestionar.IncrementGresit();
             }
 
-                indexIntrebareCurenta = NextQuestion();
+            indexIntrebareCurenta = NextQuestion();
         }
 
         public int GetCorect()
@@ -73,7 +78,18 @@ namespace Controller
         {
             return generated.Count > 26;
         }
+        public void ClearList()
+        {
+            generated.Clear();
+        }
+        public void ClearScore()
+        {
+            chestionar.Corect = 0;
+            chestionar.Gresit = 0;
+        }
+        #endregion
 
+        #region Private Methods
         private Intrebare[] CitesteIntrebariDinFisier(string cale)
         {
             var listaIntrebari = new List<Intrebare>();
@@ -102,10 +118,10 @@ namespace Controller
             } while (generated.Contains(x));
             return x;
         }
+        #endregion
 
-        public void ClearList()
-        {
-            generated.Clear();
-        }
+        #region Getter / Setters
+        public bool TimeUp {  get; set; }
+        #endregion
     }
 }

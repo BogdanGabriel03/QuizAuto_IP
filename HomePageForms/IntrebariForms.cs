@@ -1,4 +1,5 @@
-﻿using Controller;
+﻿
+using Controller;
 using Model;
 using System;
 using System.Collections.Generic;
@@ -14,24 +15,47 @@ namespace HomePageForms
 {
     public partial class IntrebariForms : Form
     {
+        #region Private Member variables
+        /// <summary>
+        /// _controller = instanță a controller-ului
+        /// _timer = control de tip timer
+        /// _remainingTIme = textul pentru a fi afișat pe interfață
+        /// </summary>
         private ChestionarController _controller;
-        private int nrIntrebare = 0;
+        private Timer _timer;
+        private int _remainingTime;
+        #endregion
+
+        #region Constructors
+        /// <summary>
+        /// Constructorul instanțiază controller-ul, creează controlul de tip timer și îl pornește
+        /// </summary>
+        /// <param name="controller"></param>
         public IntrebariForms(ChestionarController controller)
         {
-            InitializeComponent();
             _controller = controller;
-            AfiseazaIntrebari();
+            AfiseazaIntrebari("00:10");
+            _timer = new Timer();
+            _timer.Interval = 1000;
+            _timer.Tick += timer1_Tick;
+            _timer.Start();
         }
+        #endregion
 
+        #region Private Methods
         private void IntrebariForms_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void AfiseazaIntrebari()
+        /// <summary>
+        /// Afișează următoarea întrebare și setează valoarea timerului
+        /// </summary>
+        /// <param name="timerValue"></param>
+        private void AfiseazaIntrebari(string timerValue)
         {
             this.Controls.Clear();
             this.InitializeComponent();
+            label2.Text = timerValue;
             Intrebare intrebare = _controller.GetIntrebareCurenta();
             int y = 25;
 
@@ -63,7 +87,11 @@ namespace HomePageForms
                 y += 15;
             }
         }
-        // submit answer
+        /// <summary>
+        /// Trimite răspunsurile și verifică dacă utilizatorul a trecut de ultima întrebare
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             if (!_controller.EsteTerminat())
@@ -86,10 +114,9 @@ namespace HomePageForms
                     }
                 }
                 _controller.TrimiteRaspuns(indiciSelectati);
-                nrIntrebare++;
-                AfiseazaIntrebari();
+                AfiseazaIntrebari(label2.Text);
             }
-            if(_controller.EsteTerminat()||_controller.GetGresit()>4)
+            if (_controller.EsteTerminat() || _controller.GetGresit() > 4)
             {
                 _controller.ClearList();
                 FinalForms f3 = new FinalForms(_controller);
@@ -97,5 +124,44 @@ namespace HomePageForms
                 this.Close();
             }
         }
+        /// <summary>
+        /// Funcția de callback a timerului se apelează la o secundă și verifică de ficare dată dacă timpul a expirat, caz în care setează un flag
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string Time = label2.Text;
+            try
+            {
+                string[] ms = Time.Split(':');
+                _remainingTime = int.Parse(ms[0]) * 60 + int.Parse(ms[1]);
+                _remainingTime--;
+                label2.Text = _remainingTime / 60 + ":" + _remainingTime % 60;
+                if (_remainingTime <= 0)
+                {
+                    _controller.TimeUp = _remainingTime <= 0;
+                    _controller.ClearList();
+                    FinalForms f3 = new FinalForms(_controller);
+                    f3.Show();
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                label2.Text = ex.Message;
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IntrebariForms_Load_1(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

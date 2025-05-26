@@ -25,3 +25,5 @@ E:\QuizAuto_IP\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
 E:\QuizAuto_IP\Controller\obj\Debug\Controller.csproj.Up2Date
 E:\QuizAuto_IP\Controller\obj\Debug\Controller.dll
 E:\QuizAuto_IP\Controller\obj\Debug\Controller.pdb
+E:\QuizAuto_IP\Controller\bin\Debug\Controller.xml
+E:\QuizAuto_IP\Controller\bin\Debug\Model.xml
