@@ -34,5 +34,10 @@ namespace HomePageForms
             LogInForms f5 = new LogInForms();
             f5.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("Help.pdf");
+        }
     }
 }
