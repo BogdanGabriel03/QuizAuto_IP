@@ -31,10 +31,10 @@ namespace HomePageForms
             lblRezultat.Font = new Font("Times New Roman", 20, FontStyle.Bold);
             lblRezultat.Location = new Point(10, 25);
             lblRezultat.AutoSize = true;
-            if(_controller.GetScor()>21)
-                lblRezultat.Text = "Felicitari, esti admis obtinand " + _controller.GetScor() + " puncte.";
+            if(_controller.GetGresit()>4)
+                lblRezultat.Text = "Din pacate esti respins pentru ca ai gresit la "+ _controller.GetGresit() + " intrebari.";
             else
-                lblRezultat.Text = "Din pacate ai obtinut doar " + _controller.GetScor() + " puncte, mai invata!";
+               lblRezultat.Text = "Felicitari, esti admis obtinand " + _controller.GetCorect() + " raspunsuri corecte.";
             this.Controls.Add(lblRezultat);
         }
         private void button2_Click(object sender, EventArgs e)
@@ -42,6 +42,11 @@ namespace HomePageForms
             HomePageForms f4 = new HomePageForms(_controller);
             f4.Show();
             this.Close();
+        }
+
+        private void FinalForms_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -3,16 +3,21 @@
     public class Chestionar
     {
         private Intrebare[] intrebari;
-        private int scor;
+        private int corect,gresit;
 
         public Chestionar(Intrebare[] intrebari)
         {
             this.intrebari = intrebari;
-            this.scor = 0;
+            this.corect = 0;
+            this.gresit = 0;
         }
-        public void IncrementScor()
+        public void IncrementCorect()
         {
-            scor++;
+            corect++;
+        }
+       public void IncrementGresit()
+        {
+            gresit++;
         }
 
         public Intrebare[] Intrebari
@@ -20,10 +25,13 @@
             get { return intrebari; }
         }
 
-        public int Scor
+        public int Corect
         {
-            get { return scor; }
+            get { return corect; }
         }
+
+        public int Gresit
+        { get { return gresit; } }
 
     }
 }

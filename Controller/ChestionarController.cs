@@ -49,15 +49,24 @@ namespace Controller
 
             if (corecte.SequenceEqual(selectate))
             {
-                chestionar.IncrementScor();
+                chestionar.IncrementCorect();
+            }
+            else
+            {
+                chestionar.IncrementGresit();
             }
 
-            indexIntrebareCurenta = NextQuestion();
+                indexIntrebareCurenta = NextQuestion();
         }
 
-        public int GetScor()
+        public int GetCorect()
         {
-            return chestionar.Scor;
+            return chestionar.Corect;
+        }
+
+        public int GetGresit()
+        {
+            return chestionar.Gresit;
         }
 
         public bool EsteTerminat()

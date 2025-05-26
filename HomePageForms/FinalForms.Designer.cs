@@ -52,6 +52,7 @@
             this.Controls.Add(this.button2);
             this.Name = "FinalForms";
             this.Text = "FinalForms";
+            this.Load += new System.EventHandler(this.FinalForms_Load);
             this.ResumeLayout(false);
 
         }

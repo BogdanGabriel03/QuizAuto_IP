@@ -1,41 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\QuizAuto_IP\\Model\\",
+  "WorkspaceRootPath": "D:\\Facultate\\ip\\Model\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|e:\\quizauto_ip\\homepageforms\\finalforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\finalforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|e:\\quizauto_ip\\homepageforms\\finalforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\finalforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4587FAA-5FF3-4D5D-AA5F-A764C60EDE3A}|..\\Controller\\Controller.csproj|e:\\quizauto_ip\\controller\\chestionarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\intrebariforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4587FAA-5FF3-4D5D-AA5F-A764C60EDE3A}|..\\Controller\\Controller.csproj|e:\\quizauto_ip\\controller\\globalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\intrebariforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|e:\\quizauto_ip\\homepageforms\\homepageforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4587FAA-5FF3-4D5D-AA5F-A764C60EDE3A}|..\\Controller\\Controller.csproj|d:\\facultate\\ip\\controller\\chestionarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|e:\\quizauto_ip\\model\\chestionar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|D:\\Facultate\\ip\\Model\\chestionar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|solutionrelative:chestionar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|e:\\quizauto_ip\\model\\intrebare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|solutionrelative:intrebare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|e:\\quizauto_ip\\homepageforms\\intrebariforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|e:\\quizauto_ip\\homepageforms\\intrebariforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|e:\\quizauto_ip\\homepageforms\\homepageforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|e:\\quizauto_ip\\homepageforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|d:\\facultate\\ip\\homepageforms\\homepageforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,147 +32,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChestionarController.cs",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\Controller\\ChestionarController.cs",
-              "RelativeDocumentMoniker": "..\\Controller\\ChestionarController.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\Controller\\ChestionarController.cs",
-              "RelativeToolTip": "..\\Controller\\ChestionarController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAMwEAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:07:38.172Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FinalForms.cs",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\HomePageForms\\FinalForms.cs",
+              "DocumentMoniker": "D:\\Facultate\\ip\\HomePageForms\\FinalForms.cs",
               "RelativeDocumentMoniker": "..\\HomePageForms\\FinalForms.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\FinalForms.cs",
+              "ToolTip": "D:\\Facultate\\ip\\HomePageForms\\FinalForms.cs",
               "RelativeToolTip": "..\\HomePageForms\\FinalForms.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowB8AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAtwB0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:03:23.136Z",
+              "WhenOpened": "2025-05-26T18:13:30.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IntrebariForms.cs",
+              "DocumentMoniker": "D:\\Facultate\\ip\\HomePageForms\\IntrebariForms.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\IntrebariForms.cs",
+              "ToolTip": "D:\\Facultate\\ip\\HomePageForms\\IntrebariForms.cs",
+              "RelativeToolTip": "..\\HomePageForms\\IntrebariForms.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAjwGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T18:07:55.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GlobalController.cs",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\Controller\\GlobalController.cs",
-              "RelativeDocumentMoniker": "..\\Controller\\GlobalController.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\Controller\\GlobalController.cs",
-              "RelativeToolTip": "..\\Controller\\GlobalController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T16:05:03.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IntrebariForms.cs",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\HomePageForms\\IntrebariForms.cs",
-              "RelativeDocumentMoniker": "..\\HomePageForms\\IntrebariForms.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\IntrebariForms.cs",
-              "RelativeToolTip": "..\\HomePageForms\\IntrebariForms.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAIAwwEQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:53:38.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "IntrebariForms.cs [Design]",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\HomePageForms\\IntrebariForms.cs",
+              "DocumentMoniker": "D:\\Facultate\\ip\\HomePageForms\\IntrebariForms.cs",
               "RelativeDocumentMoniker": "..\\HomePageForms\\IntrebariForms.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\IntrebariForms.cs [Design]",
+              "ToolTip": "D:\\Facultate\\ip\\HomePageForms\\IntrebariForms.cs [Design]",
               "RelativeToolTip": "..\\HomePageForms\\IntrebariForms.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:53:36.406Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Intrebare.cs",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\Model\\Intrebare.cs",
-              "RelativeDocumentMoniker": "Intrebare.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\Model\\Intrebare.cs",
-              "RelativeToolTip": "Intrebare.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:53:34.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Chestionar.cs",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\Model\\Chestionar.cs",
-              "RelativeDocumentMoniker": "Chestionar.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\Model\\Chestionar.cs",
-              "RelativeToolTip": "Chestionar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:45:50.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomePageForms.cs",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\HomePageForms\\HomePageForms.cs",
-              "RelativeDocumentMoniker": "..\\HomePageForms\\HomePageForms.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\HomePageForms.cs",
-              "RelativeToolTip": "..\\HomePageForms\\HomePageForms.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:42:02.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\HomePageForms\\Program.cs",
-              "RelativeDocumentMoniker": "..\\HomePageForms\\Program.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\Program.cs",
-              "RelativeToolTip": "..\\HomePageForms\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:39:31.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomePageForms.cs [Design]",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\HomePageForms\\HomePageForms.cs",
-              "RelativeDocumentMoniker": "..\\HomePageForms\\HomePageForms.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\HomePageForms.cs [Design]",
-              "RelativeToolTip": "..\\HomePageForms\\HomePageForms.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:39:26.92Z",
+              "WhenOpened": "2025-05-26T18:07:53.48Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "FinalForms.cs [Design]",
-              "DocumentMoniker": "E:\\QuizAuto_IP\\HomePageForms\\FinalForms.cs",
+              "DocumentMoniker": "D:\\Facultate\\ip\\HomePageForms\\FinalForms.cs",
               "RelativeDocumentMoniker": "..\\HomePageForms\\FinalForms.cs",
-              "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\FinalForms.cs [Design]",
+              "ToolTip": "D:\\Facultate\\ip\\HomePageForms\\FinalForms.cs [Design]",
               "RelativeToolTip": "..\\HomePageForms\\FinalForms.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:39:26.06Z",
+              "WhenOpened": "2025-05-26T18:07:21.829Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChestionarController.cs",
+              "DocumentMoniker": "D:\\Facultate\\ip\\Controller\\ChestionarController.cs",
+              "RelativeDocumentMoniker": "..\\Controller\\ChestionarController.cs",
+              "ToolTip": "D:\\Facultate\\ip\\Controller\\ChestionarController.cs",
+              "RelativeToolTip": "..\\Controller\\ChestionarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T18:07:19.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomePageForms.cs",
+              "DocumentMoniker": "D:\\Facultate\\ip\\HomePageForms\\HomePageForms.cs",
+              "RelativeDocumentMoniker": "..\\HomePageForms\\HomePageForms.cs",
+              "ToolTip": "D:\\Facultate\\ip\\HomePageForms\\HomePageForms.cs",
+              "RelativeToolTip": "..\\HomePageForms\\HomePageForms.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T18:05:55.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Chestionar.cs",
+              "DocumentMoniker": "D:\\Facultate\\ip\\Model\\Chestionar.cs",
+              "RelativeDocumentMoniker": "Chestionar.cs",
+              "ToolTip": "D:\\Facultate\\ip\\Model\\Chestionar.cs",
+              "RelativeToolTip": "Chestionar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:45:50.291Z",
+              "EditorCaption": ""
             }
           ]
         }

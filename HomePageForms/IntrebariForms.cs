@@ -89,7 +89,7 @@ namespace HomePageForms
                 nrIntrebare++;
                 AfiseazaIntrebari();
             }
-            if(_controller.EsteTerminat())
+            if(_controller.EsteTerminat()||_controller.GetGresit()>4)
             {
                 _controller.ClearList();
                 FinalForms f3 = new FinalForms(_controller);
