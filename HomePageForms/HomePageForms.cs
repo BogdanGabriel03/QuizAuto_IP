@@ -37,7 +37,7 @@ namespace HomePageForms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("Help.pdf");
+            Help.ShowHelp(this, "help.chm");
         }
     }
 }
