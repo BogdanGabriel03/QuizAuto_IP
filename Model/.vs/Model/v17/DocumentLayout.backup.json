@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "E:\\QuizAuto_IP\\Model\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|E:\\QuizAuto_IP\\Model\\chestionar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|e:\\quizauto_ip\\model\\chestionar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|solutionrelative:chestionar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,7 +22,7 @@
       "AbsoluteMoniker": "D:0:0:{4FC2B845-9795-49A6-9319-7297F549C484}|..\\HomePageForms\\HomePageForms.csproj|e:\\quizauto_ip\\homepageforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|e:\\quizauto_ip\\model\\intrebare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|E:\\QuizAuto_IP\\Model\\intrebare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D7D8D8E-F4BA-4463-8785-36CB069ADAEE}|Model.csproj|solutionrelative:intrebare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -57,8 +57,7 @@
               "RelativeToolTip": "..\\QuizAutoTest\\UnitTest1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T20:52:28.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T20:52:28.443Z"
             },
             {
               "$type": "Document",
@@ -70,8 +69,7 @@
               "RelativeToolTip": "Intrebare.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T20:50:54.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T20:50:54.487Z"
             },
             {
               "$type": "Document",
@@ -83,8 +81,7 @@
               "RelativeToolTip": "..\\HomePageForms\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T20:50:48.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T20:50:48.982Z"
             },
             {
               "$type": "Document",
@@ -96,8 +93,7 @@
               "RelativeToolTip": "..\\HomePageForms\\FinalForms.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:47:13.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T19:47:13.897Z"
             },
             {
               "$type": "Document",
@@ -108,8 +104,7 @@
               "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\FinalForms.cs [Design]",
               "RelativeToolTip": "..\\HomePageForms\\FinalForms.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:47:12.496Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-26T19:47:12.496Z"
             },
             {
               "$type": "Document",
@@ -121,8 +116,7 @@
               "RelativeToolTip": "..\\HomePageForms\\IntrebariForms.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:45:45.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T19:45:45.29Z"
             },
             {
               "$type": "Document",
@@ -133,8 +127,7 @@
               "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\IntrebariForms.cs [Design]",
               "RelativeToolTip": "..\\HomePageForms\\IntrebariForms.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:45:43.826Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-26T19:45:43.826Z"
             },
             {
               "$type": "Document",
@@ -146,8 +139,7 @@
               "RelativeToolTip": "..\\HomePageForms\\HomePageForms.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:45:20.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T19:45:20.462Z"
             },
             {
               "$type": "Document",
@@ -158,8 +150,7 @@
               "ToolTip": "E:\\QuizAuto_IP\\HomePageForms\\HomePageForms.cs [Design]",
               "RelativeToolTip": "..\\HomePageForms\\HomePageForms.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:45:19.182Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-26T19:45:19.182Z"
             },
             {
               "$type": "Document",
@@ -171,8 +162,7 @@
               "RelativeToolTip": "..\\Controller\\ChestionarController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:44:56.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T19:44:56.771Z"
             },
             {
               "$type": "Document",
