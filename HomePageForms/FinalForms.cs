@@ -38,7 +38,7 @@ namespace HomePageForms
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            IntrebariForms f4 = new IntrebariForms();
+            HomePageForms f4 = new HomePageForms();
             f4.Show();
             this.Close();
         }
