@@ -1,4 +1,5 @@
 ﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,25 +11,35 @@ namespace Controller
         private Chestionar chestionar;
         private int indexIntrebareCurenta;
         private string caleFisier = "intrebari.txt";
-
+        private Random rand;
+        private List<int> generated;
         public ChestionarController()
         {
             Intrebare[] intrebari = CitesteIntrebariDinFisier(caleFisier);
             chestionar = new Chestionar(intrebari);
-            indexIntrebareCurenta = 0;
+            rand = new Random();
+            generated = new List<int>();
+            indexIntrebareCurenta = rand.Next(53);
+            //generated.Add(indexIntrebareCurenta);
         }
 
         public Intrebare GetIntrebareCurenta()
         {
             if (!EsteTerminat())
+            {
+                generated.Add(indexIntrebareCurenta);
                 return chestionar.Intrebari[indexIntrebareCurenta];
+            }
             else
                 return null;
         }
 
         public void TrimiteRaspuns(int[] varianteSelectate)
         {
-            if (EsteTerminat()) return;
+            if (EsteTerminat())
+            {
+                return;
+            }
 
             Intrebare intrebare = chestionar.Intrebari[indexIntrebareCurenta];
 
@@ -41,7 +52,7 @@ namespace Controller
                 chestionar.IncrementScor();
             }
 
-            indexIntrebareCurenta++;
+            indexIntrebareCurenta = NextQuestion();
         }
 
         public int GetScor()
@@ -51,7 +62,7 @@ namespace Controller
 
         public bool EsteTerminat()
         {
-            return indexIntrebareCurenta >= chestionar.Intrebari.Length;
+            return generated.Count > 26;
         }
 
         private Intrebare[] CitesteIntrebariDinFisier(string cale)
@@ -71,6 +82,21 @@ namespace Controller
             }
 
             return listaIntrebari.ToArray();
+        }
+
+        private int NextQuestion()
+        {
+            int x;
+            do
+            {
+                x = rand.Next(53);
+            } while (generated.Contains(x));
+            return x;
+        }
+
+        public void ClearList()
+        {
+            generated.Clear();
         }
     }
 }

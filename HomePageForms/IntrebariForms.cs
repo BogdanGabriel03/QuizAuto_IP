@@ -14,28 +14,28 @@ namespace HomePageForms
 {
     public partial class IntrebariForms : Form
     {
+        private ChestionarController _controller;
         private int nrIntrebare = 0;
-        public IntrebariForms()
+        public IntrebariForms(ChestionarController controller)
         {
             InitializeComponent();
-
+            _controller = controller;
             AfiseazaIntrebari();
-
         }
 
         private void IntrebariForms_Load(object sender, EventArgs e)
         {
+
         }
 
         private void AfiseazaIntrebari()
         {
-            var chestionarController = GlobalController.Controller;
             this.Controls.Clear();
             this.InitializeComponent();
-            Intrebare intrebare = chestionarController.GetIntrebareCurenta();
+            Intrebare intrebare = _controller.GetIntrebareCurenta();
             int y = 25;
 
-            if (chestionarController.EsteTerminat() == false)
+            if (_controller.EsteTerminat() == false)
             {
                 Label lblIntrebare = new Label();
                 lblIntrebare.Text = intrebare.Text;
@@ -63,12 +63,11 @@ namespace HomePageForms
                 y += 15;
             }
         }
-
+        // submit answer
         private void button2_Click(object sender, EventArgs e)
         {
-            if (nrIntrebare < 2)
+            if (!_controller.EsteTerminat())
             {
-                var chestionarController = GlobalController.Controller;
                 int count = 0;
                 foreach (Control control in this.Controls)
                 {
@@ -86,13 +85,14 @@ namespace HomePageForms
                         index++;
                     }
                 }
-                chestionarController.TrimiteRaspuns(indiciSelectati);
+                _controller.TrimiteRaspuns(indiciSelectati);
                 nrIntrebare++;
                 AfiseazaIntrebari();
             }
-            else
+            if(_controller.EsteTerminat())
             {
-                FinalForms f3 = new FinalForms();
+                _controller.ClearList();
+                FinalForms f3 = new FinalForms(_controller);
                 f3.Show();
                 this.Close();
             }

@@ -14,15 +14,16 @@ namespace HomePageForms
 {
     public partial class FinalForms : Form
     {
-        public FinalForms()
+        private ChestionarController _controller;
+        public FinalForms(ChestionarController controller)
         {
             InitializeComponent();
+            _controller = controller;
             AfiseazaRezultat();
         }
 
         private void AfiseazaRezultat() 
         {
-            var chestionarController = GlobalController.Controller;
             this.Controls.Clear();
             this.InitializeComponent();
 
@@ -30,15 +31,15 @@ namespace HomePageForms
             lblRezultat.Font = new Font("Times New Roman", 20, FontStyle.Bold);
             lblRezultat.Location = new Point(10, 25);
             lblRezultat.AutoSize = true;
-            if(chestionarController.GetScor()>1)
-                lblRezultat.Text = "Felicitari, esti admis obtinand " + chestionarController.GetScor() + " puncte.";
+            if(_controller.GetScor()>21)
+                lblRezultat.Text = "Felicitari, esti admis obtinand " + _controller.GetScor() + " puncte.";
             else
-                lblRezultat.Text = "Din pacate ai obtinut doar " + chestionarController.GetScor() + " puncte, mai invata!";
+                lblRezultat.Text = "Din pacate ai obtinut doar " + _controller.GetScor() + " puncte, mai invata!";
             this.Controls.Add(lblRezultat);
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            HomePageForms f4 = new HomePageForms();
+            HomePageForms f4 = new HomePageForms(_controller);
             f4.Show();
             this.Close();
         }

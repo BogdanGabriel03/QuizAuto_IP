@@ -10,3 +10,9 @@ D:\Facultate\IP\Model\obj\Debug\Model.csproj.AssemblyReference.cache
 D:\Facultate\IP\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 D:\Facultate\IP\Model\obj\Debug\Model.dll
 D:\Facultate\IP\Model\obj\Debug\Model.pdb
+E:\QuizAuto_IP\Model\bin\Debug\Model.dll
+E:\QuizAuto_IP\Model\bin\Debug\Model.pdb
+E:\QuizAuto_IP\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\QuizAuto_IP\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\QuizAuto_IP\Model\obj\Debug\Model.dll
+E:\QuizAuto_IP\Model\obj\Debug\Model.pdb

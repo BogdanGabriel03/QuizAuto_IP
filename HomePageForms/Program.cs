@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -15,7 +16,7 @@ namespace HomePageForms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            HomePageForms f1= new HomePageForms();
+            HomePageForms f1= new HomePageForms(new ChestionarController());
             f1.Show();
             Application.Run();
         }
