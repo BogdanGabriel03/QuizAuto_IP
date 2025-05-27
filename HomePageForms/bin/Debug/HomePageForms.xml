@@ -13,7 +13,7 @@
             <summary>
             Constructorul clasei FinalForms inițializează variabila privată, componentele de pe pagina și afișează prima întrebare
             </summary>
-            <param name="controller"></param>
+            <param name="controller">ChestionarController = instanța controllerului</param>
         </member>
         <member name="M:HomePageForms.FinalForms.AfiseazaRezultat">
             <summary>
@@ -44,15 +44,32 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="M:HomePageForms.HomePageForms.#ctor(Controller.ChestionarController)">
+            <summary>
+            Constructor HomePageForms ( ChestionarController controller )
+            </summary>
+            <param name="controller"> Instanțiază controller-ul</param>
+        </member>
         <member name="M:HomePageForms.HomePageForms.button1_Click(System.Object,System.EventArgs)">
             <summary>
-             Load chestionar button
+            Funcția de callback a butonului de începere a chestionarului
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HomePageForms.HomePageForms.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Funcția de callback a butonului de login
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
         </member>
         <member name="M:HomePageForms.HomePageForms.button1_Click_1(System.Object,System.EventArgs)">
-            Help button - 
+            <summary>
+            Funcția de callback a butonului help
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="F:HomePageForms.HomePageForms.components">
             <summary>
@@ -82,13 +99,13 @@
             <summary>
             Constructorul instanțiază controller-ul, creează controlul de tip timer și îl pornește
             </summary>
-            <param name="controller"></param>
+            <param name="controller">Chestionar Controller = Instanța controller-ului</param>
         </member>
         <member name="M:HomePageForms.IntrebariForms.AfiseazaIntrebari(System.String)">
             <summary>
             Afișează următoarea întrebare și setează valoarea timerului
             </summary>
-            <param name="timerValue"></param>
+            <param name="timerValue">string = Valoarea afișată pe interfață pentru timer</param>
         </member>
         <member name="M:HomePageForms.IntrebariForms.button2_Click(System.Object,System.EventArgs)">
             <summary>
@@ -120,6 +137,13 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="M:HomePageForms.LogInForms.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Log in button
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="F:HomePageForms.LogInForms.components">
             <summary>

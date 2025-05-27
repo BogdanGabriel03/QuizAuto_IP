@@ -17,3 +17,4 @@ E:\QuizAuto_IP\QuizAutoTest\obj\Debug\QuizAutoTest.csproj.CoreCompileInputs.cach
 E:\QuizAuto_IP\QuizAutoTest\obj\Debug\QuizAuto.D902F89F.Up2Date
 E:\QuizAuto_IP\QuizAutoTest\obj\Debug\QuizAutoTest.dll
 E:\QuizAuto_IP\QuizAutoTest\obj\Debug\QuizAutoTest.pdb
+E:\QuizAuto_IP\QuizAutoTest\bin\Debug\QuizAutoTest.xml

@@ -1,4 +1,20 @@
-﻿using Model;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        ChestionarController.cs                                  *
+ *  Copyright:   (c) 2025, Ciausu Calin-Ioan                              *
+ *                                                                        *
+ *  Description: Displays the main page of the user interface and the     *        Change this!!!
+ *               controls to connect to other views                       *
+ *                                                                        *
+ *  This code and information is provided "as is" without warranty of     *
+ *  any kind, either expressed or implied, including but not limited      *
+ *  to the implied warranties of merchantability or fitness for a         *
+ *  particular purpose. You are free to use this source code in your      *
+ *  applications as long as the original copyright notice is included.    *
+ *                                                                        *
+ **************************************************************************/
+
+using Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,9 +31,10 @@ namespace Controller
         private Random rand;
         private List<int> generated;
         private bool timeUp;
+        private int _nrAccesari;
         #endregion
 
-        #region Public Methods
+        #region Construcotrs
         public ChestionarController()
         {
             Intrebare[] intrebari = CitesteIntrebariDinFisier(caleFisier);
@@ -25,8 +42,12 @@ namespace Controller
             rand = new Random();
             generated = new List<int>();
             indexIntrebareCurenta = rand.Next(53);
+            _nrAccesari = 2;
             //generated.Add(indexIntrebareCurenta);
         }
+        #endregion
+
+        #region Public Methods
 
         public Intrebare GetIntrebareCurenta()
         {
@@ -122,6 +143,7 @@ namespace Controller
 
         #region Getter / Setters
         public bool TimeUp {  get; set; }
+        public int NrAccesari { get { return _nrAccesari; } set { _nrAccesari = value; } }
         #endregion
     }
 }

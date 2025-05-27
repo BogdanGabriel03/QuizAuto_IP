@@ -34,23 +34,23 @@ namespace Model
         ///     - variante = vector de stringuri ce conține variantele de răspuns
         ///     - varianteCorecte = vector ce conține indecșii răspunsurilor corecte
         /// </summary>
-        private string text;
-        private string[] variante;
-        private int[] varianteCorecte;
+        private string _text;
+        private string[] _variante;
+        private int[] _varianteCorecte;
         #endregion
 
         #region Constructors
         /// <summary>
         /// Constructorul clasei, cu rol de a seta informațiile private
         /// </summary>
-        /// <param name="text"></param>
-        /// <param name="variante"></param>
-        /// <param name="varianteCorecte"></param>
+        /// <param name="text">string = Textul intrebarii</param>
+        /// <param name="variante">string[] = Variantele de răspuns</param>
+        /// <param name="varianteCorecte">int[] = Indecșii variantelor corecte de răspuns</param>
         public Intrebare(string text, string[] variante, int[] varianteCorecte)
         {
-            this.text = text;
-            this.variante = variante;
-            this.varianteCorecte = varianteCorecte;
+            this._text = text;
+            this._variante = variante;
+            this._varianteCorecte = varianteCorecte;
         }
         #endregion
 
@@ -60,17 +60,17 @@ namespace Model
         /// </summary>
         public string Text
         {
-            get { return text; }
+            get { return _text; }
         }
 
         public string[] Variante
         {
-            get { return variante; }
+            get { return _variante; }
         }
 
         public int[] VarianteCorecte
         {
-            get { return varianteCorecte; }
+            get { return _varianteCorecte; }
         }
         #endregion
     }

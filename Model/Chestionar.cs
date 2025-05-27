@@ -1,4 +1,20 @@
-﻿using System.Windows.Markup;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Chestionar.cs                                            *
+ *  Copyright:   (c) 2025, Ciausu Calin Ioan                              *
+ *                                                                        *
+ *  Description: Încapsulează funcționalitatea unui chestionar și oferă   *
+ *               metode de access și de setare a membriilor               *
+ *                                                                        *
+ *  This code and information is provided "as is" without warranty of     *
+ *  any kind, either expressed or implied, including but not limited      *
+ *  to the implied warranties of merchantability or fitness for a         *
+ *  particular purpose. You are free to use this source code in your      *
+ *  applications as long as the original copyright notice is included.    *
+ *                                                                        *
+ **************************************************************************/
+
+using System.Windows.Markup;
 
 namespace Model
 {
@@ -40,19 +56,24 @@ namespace Model
         #region Getters / Setters
 
         /// <summary>
-        /// Getters pentru toți membrii privați și setters pentru contoare
+        /// Getter pentru lista de întrebări
         /// </summary>
         public Intrebare[] Intrebari
         {
             get { return _intrebari; }
         }
-
+        /// <summary>
+        /// Getter/Setter pentru numărul de răspunsuri corecte
+        /// </summary>
         public int Corect
         {
             get { return _corect; }
             set { _corect = value; }
         }
 
+        /// <summary>
+        /// Getter/Setter pentru numărul de răspunsuri greșite
+        /// </summary>
         public int Gresit
         {
             get { return _gresit; }

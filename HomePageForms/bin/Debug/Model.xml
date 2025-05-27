@@ -23,7 +23,17 @@
         </member>
         <member name="P:Model.Chestionar.Intrebari">
             <summary>
-            Getters pentru toți membrii privați și setters pentru contoare
+            Getter pentru lista de întrebări
+            </summary>
+        </member>
+        <member name="P:Model.Chestionar.Corect">
+            <summary>
+            Getter/Setter pentru numărul de răspunsuri corecte
+            </summary>
+        </member>
+        <member name="P:Model.Chestionar.Gresit">
+            <summary>
+            Getter/Setter pentru numărul de răspunsuri greșite
             </summary>
         </member>
         <member name="T:Model.Intrebare">
@@ -31,7 +41,7 @@
             Clasă responsabilă cu păstrarea informațiilor despre fiecare întrebare în parte
             </summary>
         </member>
-        <member name="F:Model.Intrebare.text">
+        <member name="F:Model.Intrebare._text">
             <summary>
             Membrii privați ai clasei:
                 - text = textul întrebării
@@ -43,9 +53,9 @@
             <summary>
             Constructorul clasei, cu rol de a seta informațiile private
             </summary>
-            <param name="text"></param>
-            <param name="variante"></param>
-            <param name="varianteCorecte"></param>
+            <param name="text">string = Textul intrebarii</param>
+            <param name="variante">string[] = Variantele de răspuns</param>
+            <param name="varianteCorecte">int[] = Indecșii variantelor corecte de răspuns</param>
         </member>
         <member name="P:Model.Intrebare.Text">
             <summary>

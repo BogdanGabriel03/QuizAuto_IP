@@ -44,7 +44,7 @@ namespace HomePageForms
         /// <summary>
         /// Constructorul instanțiază controller-ul, creează controlul de tip timer și îl pornește
         /// </summary>
-        /// <param name="controller"></param>
+        /// <param name="controller">Chestionar Controller = Instanța controller-ului</param>
         public IntrebariForms(ChestionarController controller)
         {
             _controller = controller;
@@ -64,7 +64,7 @@ namespace HomePageForms
         /// <summary>
         /// Afișează următoarea întrebare și setează valoarea timerului
         /// </summary>
-        /// <param name="timerValue"></param>
+        /// <param name="timerValue">string = Valoarea afișată pe interfață pentru timer</param>
         private void AfiseazaIntrebari(string timerValue)
         {
             this.Controls.Clear();

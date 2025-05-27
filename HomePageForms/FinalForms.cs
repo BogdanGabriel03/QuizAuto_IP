@@ -41,7 +41,7 @@ namespace HomePageForms
         /// <summary>
         /// Constructorul clasei FinalForms inițializează variabila privată, componentele de pe pagina și afișează prima întrebare
         /// </summary>
-        /// <param name="controller"></param>
+        /// <param name="controller">ChestionarController = instanța controllerului</param>
         public FinalForms(ChestionarController controller)
         {
             InitializeComponent();

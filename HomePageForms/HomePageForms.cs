@@ -34,6 +34,10 @@ namespace HomePageForms
         #endregion
 
         #region Public Methods
+        /// <summary>
+        /// Constructor HomePageForms ( ChestionarController controller )
+        /// </summary>
+        /// <param name="controller"> Instanțiază controller-ul</param>
         public HomePageForms(ChestionarController controller)
         {
             InitializeComponent();
@@ -48,25 +52,41 @@ namespace HomePageForms
         }
 
         /// <summary>
-        ///  Load chestionar button
+        /// Funcția de callback a butonului de începere a chestionarului
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            IntrebariForms f2 = new IntrebariForms(_controller);
-            f2.Show();
-            this.Close();
+            if(_controller.NrAccesari > 0)
+            {
+                _controller.NrAccesari = _controller.NrAccesari - 1;
+                IntrebariForms f2 = new IntrebariForms(_controller);
+                f2.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Ai rămas fără încercări! Intră în cont pentru a beneficia de un număr nelimitat de încercări!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
-         
+         /// <summary>
+         /// Funcția de callback a butonului de login
+         /// </summary>
+         /// <param name="sender"></param>
+         /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
-            LogInForms f5 = new LogInForms();
+            LogInForms f5 = new LogInForms(_controller);
             f5.Show();
         }
 
-        /// Help button - 
+        /// <summary>
+        /// Funcția de callback a butonului help
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click_1(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "help.chm");
