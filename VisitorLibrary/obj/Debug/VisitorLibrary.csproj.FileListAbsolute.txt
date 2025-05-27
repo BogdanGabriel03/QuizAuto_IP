@@ -10,3 +10,9 @@ C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLi
 C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.dll
 C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.pdb
+D:\QuizAuto_IP\VisitorLibrary\bin\Debug\VisitorLibrary.dll
+D:\QuizAuto_IP\VisitorLibrary\bin\Debug\VisitorLibrary.pdb
+D:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.csproj.AssemblyReference.cache
+D:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.csproj.CoreCompileInputs.cache
+D:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.dll
+D:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.pdb

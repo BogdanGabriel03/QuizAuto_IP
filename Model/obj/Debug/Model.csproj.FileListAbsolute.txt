@@ -24,3 +24,4 @@ C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\obj\Debug\Model.csproj.Assem
 C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\obj\Debug\Model.dll
 C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\obj\Debug\Model.pdb
+D:\QuizAuto_IP\Model\bin\Debug\Model.xml

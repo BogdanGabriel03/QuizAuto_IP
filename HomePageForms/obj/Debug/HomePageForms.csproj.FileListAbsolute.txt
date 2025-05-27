@@ -79,3 +79,16 @@ C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageFo
 C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePage.A9DB6D33.Up2Date
 C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.exe
 C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.pdb
+D:\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.xml
+D:\QuizAuto_IP\HomePageForms\bin\Debug\ConcreteVisitors.dll
+D:\QuizAuto_IP\HomePageForms\bin\Debug\Controller.dll
+D:\QuizAuto_IP\HomePageForms\bin\Debug\Model.dll
+D:\QuizAuto_IP\HomePageForms\bin\Debug\VisitorLibrary.dll
+D:\QuizAuto_IP\HomePageForms\bin\Debug\ConcreteVisitors.pdb
+D:\QuizAuto_IP\HomePageForms\bin\Debug\Controller.pdb
+D:\QuizAuto_IP\HomePageForms\bin\Debug\Controller.xml
+D:\QuizAuto_IP\HomePageForms\bin\Debug\Model.pdb
+D:\QuizAuto_IP\HomePageForms\bin\Debug\Model.xml
+D:\QuizAuto_IP\HomePageForms\bin\Debug\VisitorLibrary.pdb
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.LogInForms.resources
+D:\QuizAuto_IP\HomePageForms\obj\Debug\HomePage.A9DB6D33.Up2Date
