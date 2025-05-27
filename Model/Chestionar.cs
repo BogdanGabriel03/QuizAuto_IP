@@ -3,8 +3,8 @@
  *  File:        Chestionar.cs                                            *
  *  Copyright:   (c) 2025, Ciausu Calin Ioan                              *
  *                                                                        *
- *  Description: Încapsulează funcționalitatea unui chestionar și oferă   *
- *               metode de access și de setare a membriilor               *
+ *  Description: Encapsulates the functionality of a questionnaire and    *
+ *               provides methods for accessing and setting members.      *
  *                                                                        *
  *  This code and information is provided "as is" without warranty of     *
  *  any kind, either expressed or implied, including but not limited      *
@@ -13,6 +13,7 @@
  *  applications as long as the original copyright notice is included.    *
  *                                                                        *
  **************************************************************************/
+
 
 using System.Windows.Markup;
 

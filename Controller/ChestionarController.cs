@@ -3,8 +3,10 @@
  *  File:        ChestionarController.cs                                  *
  *  Copyright:   (c) 2025, Ciausu Calin-Ioan                              *
  *                                                                        *
- *  Description: Displays the main page of the user interface and the     *        Change this!!!
- *               controls to connect to other views                       *
+ *  Description: Manages quiz flow: loads questions, provides the current * 
+ *               question, verifies answers, tracks score, determines     *
+ *               quiz end, and supports the Visitor pattern. Reads        *
+ *               questions from a file and handles quiz state.            *
  *                                                                        *
  *  This code and information is provided "as is" without warranty of     *
  *  any kind, either expressed or implied, including but not limited      *

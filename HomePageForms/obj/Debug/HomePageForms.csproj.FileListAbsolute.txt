@@ -54,3 +54,28 @@ E:\QuizAuto_IP\HomePageForms\bin\Debug\VisitorLibrary.dll
 E:\QuizAuto_IP\HomePageForms\bin\Debug\VisitorLibrary.pdb
 E:\QuizAuto_IP\HomePageForms\bin\Debug\ConcreteVisitors.dll
 E:\QuizAuto_IP\HomePageForms\bin\Debug\ConcreteVisitors.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.exe.config
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.xml
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.exe
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\ConcreteVisitors.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\Controller.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\Model.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\VisitorLibrary.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\ConcreteVisitors.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\Controller.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\Controller.xml
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\Model.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\Model.xml
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\bin\Debug\VisitorLibrary.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.csproj.AssemblyReference.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.FinalForms.resources
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.HomePageForms.resources
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.IntrebariForms.resources
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.LogInForms.resources
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.Properties.Resources.resources
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.csproj.GenerateResource.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.csproj.CoreCompileInputs.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePage.A9DB6D33.Up2Date
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.exe
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.pdb

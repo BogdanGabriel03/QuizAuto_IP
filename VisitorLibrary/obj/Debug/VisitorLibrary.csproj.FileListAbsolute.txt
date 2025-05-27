@@ -4,3 +4,9 @@ E:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.csproj.AssemblyReference.
 E:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.csproj.CoreCompileInputs.cache
 E:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.dll
 E:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\bin\Debug\VisitorLibrary.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\bin\Debug\VisitorLibrary.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.csproj.AssemblyReference.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.pdb

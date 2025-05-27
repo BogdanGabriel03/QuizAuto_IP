@@ -1,0 +1,6 @@
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Modell\bin\Debug\Modell.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Modell\bin\Debug\Modell.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Modell\obj\Debug\Modell.csproj.AssemblyReference.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Modell\obj\Debug\Modell.csproj.CoreCompileInputs.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Modell\obj\Debug\Modell.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Modell\obj\Debug\Modell.pdb

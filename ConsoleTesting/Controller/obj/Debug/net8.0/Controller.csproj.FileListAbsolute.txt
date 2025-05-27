@@ -1,0 +1,16 @@
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\bin\Debug\net8.0\Controller.deps.json
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\bin\Debug\net8.0\Controller.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\bin\Debug\net8.0\Controller.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\Controller.csproj.AssemblyReference.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\Controller.AssemblyInfoInputs.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\Controller.AssemblyInfo.cs
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\Controller.csproj.CoreCompileInputs.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\Controller.sourcelink.json
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\Controller.csproj.Up2Date
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\Controller.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\refint\Controller.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\Controller.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\obj\Debug\net8.0\ref\Controller.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\bin\Debug\net8.0\Modell.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConsoleTesting\Controller\bin\Debug\net8.0\Modell.pdb

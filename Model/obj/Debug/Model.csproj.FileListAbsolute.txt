@@ -17,3 +17,10 @@ E:\QuizAuto_IP\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 E:\QuizAuto_IP\Model\obj\Debug\Model.dll
 E:\QuizAuto_IP\Model\obj\Debug\Model.pdb
 E:\QuizAuto_IP\Model\bin\Debug\Model.xml
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\bin\Debug\Model.xml
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\bin\Debug\Model.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\bin\Debug\Model.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\obj\Debug\Model.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\Model\obj\Debug\Model.pdb

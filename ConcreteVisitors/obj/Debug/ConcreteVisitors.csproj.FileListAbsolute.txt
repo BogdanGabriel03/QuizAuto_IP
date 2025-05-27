@@ -7,3 +7,12 @@ E:\QuizAuto_IP\ConcreteVisitors\bin\Debug\VisitorLibrary.pdb
 E:\QuizAuto_IP\ConcreteVisitors\obj\Debug\Concrete.394514F3.Up2Date
 E:\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.dll
 E:\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConcreteVisitors\bin\Debug\ConcreteVisitors.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConcreteVisitors\bin\Debug\ConcreteVisitors.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConcreteVisitors\bin\Debug\VisitorLibrary.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConcreteVisitors\bin\Debug\VisitorLibrary.pdb
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.csproj.AssemblyReference.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.csproj.CoreCompileInputs.cache
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConcreteVisitors\obj\Debug\Concrete.394514F3.Up2Date
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.dll
+C:\Users\Calin\Desktop\IP PROIECT\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.pdb
