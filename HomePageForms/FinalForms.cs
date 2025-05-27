@@ -1,7 +1,7 @@
 ﻿/**************************************************************************
  *                                                                        *
  *  File:        Intrebare.cs                                             *
- *  Copyright:   (c) 2025, Ioan Bogdan-Gabriel                            *
+ *  Copyright:   (c) 2025, Ciașu Călin Ioan                               *
  *                                                                        *
  *  Description: Dsiplays the result of the quiz to the user, whether it  *
  *               was ended by an ending condition or by a succseful       *
@@ -66,6 +66,7 @@ namespace HomePageForms
             if(_controller.TimeUp)
             {
                 lblRezultat.Text = "Din pacate a expirat timpul!";
+                _controller.TimeUp = false;
             }
             else if(_controller.GetGresit()>4)
                 lblRezultat.Text = "Din pacate esti respins pentru ca ai gresit la "+ _controller.GetGresit() + " intrebari.";

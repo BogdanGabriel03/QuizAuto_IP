@@ -50,3 +50,7 @@ E:\QuizAuto_IP\HomePageForms\obj\Debug\HomePageForms.pdb
 E:\QuizAuto_IP\HomePageForms\bin\Debug\HomePageForms.xml
 E:\QuizAuto_IP\HomePageForms\bin\Debug\Controller.xml
 E:\QuizAuto_IP\HomePageForms\bin\Debug\Model.xml
+E:\QuizAuto_IP\HomePageForms\bin\Debug\VisitorLibrary.dll
+E:\QuizAuto_IP\HomePageForms\bin\Debug\VisitorLibrary.pdb
+E:\QuizAuto_IP\HomePageForms\bin\Debug\ConcreteVisitors.dll
+E:\QuizAuto_IP\HomePageForms\bin\Debug\ConcreteVisitors.pdb

@@ -4,5 +4,84 @@
         <name>Controller</name>
     </assembly>
     <members>
+        <member name="T:Controller.ChestionarController">
+            <summary>
+            Controller class based on the MVC model
+            </summary>
+        </member>
+        <member name="M:Controller.ChestionarController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Controller.ChestionarController.GetIntrebareCurenta">
+            <summary>
+            Permite obținerea întrebării curente
+            </summary>
+            <returns> Intrebare sau null dacă quiz-ul s-a terminat, din orice motiv</returns>
+        </member>
+        <member name="M:Controller.ChestionarController.TrimiteRaspuns(System.Int32[])">
+            <summary>
+            Trimite răspunsul, îl verifică și incremetează contorul corespunzător
+            </summary>
+            <param name="varianteSelectate"> int[]; vector cu indecșii răspunsurilor selectate de utilizator</param>
+        </member>
+        <member name="M:Controller.ChestionarController.GetCorect">
+            <summary>
+            Returnează numărul de răspunsuri corecte
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Controller.ChestionarController.GetGresit">
+            <summary>
+            Retunrează numărul de răspunsuri greșite
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Controller.ChestionarController.EsteTerminat">
+            <summary>
+            Verifică dacă chestionarul s-a terminat prin bifarea ultimei întrebări
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Controller.ChestionarController.ClearList">
+            <summary>
+            Resetează lista de indecși generați random
+            </summary>
+        </member>
+        <member name="M:Controller.ChestionarController.ClearScore">
+            <summary>
+            Resetează scorul
+            </summary>
+        </member>
+        <member name="M:Controller.ChestionarController.Accept(VisitorLibrary.IVisitor)">
+            <summary>
+            Accept visitor
+            </summary>
+            <param name="visitor"> type of visitor </param>
+        </member>
+        <member name="M:Controller.ChestionarController.CitesteIntrebariDinFisier(System.String)">
+            <summary>
+            Citește întrebările dintr-un fișier și returnează informația sub formă de vector de intrebări ( Intrebare[] )
+            </summary>
+            <param name="cale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Controller.ChestionarController.NextQuestion">
+            <summary>
+            Logica de selectare a următoarei întrebări aleatorii
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Controller.ChestionarController.TimeUp">
+            <summary>
+            Getter/Setter pentru flagul de timp expirat
+            </summary>
+        </member>
+        <member name="P:Controller.ChestionarController.NrAccesari">
+            <summary>
+            Getter/Setter pentru numărul posibil de accesări a chestionarului
+            </summary>
+        </member>
     </members>
 </doc>

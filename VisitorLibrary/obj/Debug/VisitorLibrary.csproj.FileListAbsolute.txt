@@ -1,0 +1,6 @@
+E:\QuizAuto_IP\VisitorLibrary\bin\Debug\VisitorLibrary.dll
+E:\QuizAuto_IP\VisitorLibrary\bin\Debug\VisitorLibrary.pdb
+E:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.csproj.AssemblyReference.cache
+E:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.csproj.CoreCompileInputs.cache
+E:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.dll
+E:\QuizAuto_IP\VisitorLibrary\obj\Debug\VisitorLibrary.pdb

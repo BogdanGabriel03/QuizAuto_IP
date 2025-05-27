@@ -23,18 +23,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ConcreteVisitors;
 
 namespace HomePageForms
 {
     public partial class LogInForms : Form
     {
+        #region Private Variable Members
         private ChestionarController _controller;
-        public LogInForms(ChestionarController controller)
+        private HomePageForms _homePage;
+        #endregion
+
+        #region Constructors
+        /// <summary>
+        /// Constructor(ChestionarController controller, HomePageForms homePage)
+        /// </summary>
+        /// <param name="controller">Instanta controller-ului</param>
+        /// <param name="homePage">Instanta paginii de start parinte</param>
+        public LogInForms(ChestionarController controller, HomePageForms homePage)
         {
             InitializeComponent();
             _controller = controller;
+            _homePage = homePage;
         }
+        #endregion
 
+        #region Private Methods
         /// <summary>
         /// Log in button
         /// </summary>
@@ -47,6 +61,10 @@ namespace HomePageForms
 
             if (username == "B" && parola == "1234")
             {
+                _controller.Accept(new LoggedInVisitor());
+                _controller.LoggedIn = true;
+                _controller.Username = username;
+                _homePage.UpdateUI(username);
                 this.Close();
             }
             else
@@ -54,5 +72,6 @@ namespace HomePageForms
                 MessageBox.Show("Nume de utilizator/parola invalide", "Autentificare esuata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        #endregion
     }
 }

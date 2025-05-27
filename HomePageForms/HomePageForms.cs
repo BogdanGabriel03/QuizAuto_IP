@@ -24,6 +24,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ConcreteVisitors;
 
 namespace HomePageForms
 {
@@ -42,6 +43,23 @@ namespace HomePageForms
         {
             InitializeComponent();
             _controller = controller;
+            UpdateUI(_controller.Username);
+        }
+        /// <summary>
+        /// Schimbă interfața cu utilizatorul dacă acesta este conectat/deconectat
+        /// </summary>
+        public void UpdateUI(string username)
+        {
+            if(_controller.LoggedIn)
+            {
+                label3.Text = "Logged in as " + username;
+                button2.Text = "Log Out";
+            }
+            else
+            {
+                label3.Text = "Not logged in";
+                button2.Text = "Log in";
+            }
         }
         #endregion
 
@@ -58,9 +76,9 @@ namespace HomePageForms
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            if(_controller.NrAccesari > 0)
+            if(_controller.NrAccesari > 0 || _controller.NrAccesari == -1)
             {
-                _controller.NrAccesari = _controller.NrAccesari - 1;
+                if(_controller.NrAccesari>0) _controller.NrAccesari = _controller.NrAccesari - 1;
                 IntrebariForms f2 = new IntrebariForms(_controller);
                 f2.Show();
                 this.Close();
@@ -78,8 +96,17 @@ namespace HomePageForms
          /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
-            LogInForms f5 = new LogInForms(_controller);
-            f5.Show();
+            if(!_controller.LoggedIn)
+            {
+                LogInForms f5 = new LogInForms(_controller, this);
+                f5.Show();
+            }
+            else
+            {
+                _controller.LoggedIn = false;
+                UpdateUI("");
+                _controller.Accept(new LoggedOutVisitor());
+            }
         }
 
         /// <summary>
@@ -92,5 +119,10 @@ namespace HomePageForms
             Help.ShowHelp(this, "help.chm");
         }
         #endregion
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

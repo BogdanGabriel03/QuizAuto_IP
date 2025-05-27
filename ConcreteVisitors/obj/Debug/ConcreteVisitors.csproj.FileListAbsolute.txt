@@ -1,0 +1,9 @@
+E:\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.csproj.AssemblyReference.cache
+E:\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.csproj.CoreCompileInputs.cache
+E:\QuizAuto_IP\ConcreteVisitors\bin\Debug\ConcreteVisitors.dll
+E:\QuizAuto_IP\ConcreteVisitors\bin\Debug\ConcreteVisitors.pdb
+E:\QuizAuto_IP\ConcreteVisitors\bin\Debug\VisitorLibrary.dll
+E:\QuizAuto_IP\ConcreteVisitors\bin\Debug\VisitorLibrary.pdb
+E:\QuizAuto_IP\ConcreteVisitors\obj\Debug\Concrete.394514F3.Up2Date
+E:\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.dll
+E:\QuizAuto_IP\ConcreteVisitors\obj\Debug\ConcreteVisitors.pdb

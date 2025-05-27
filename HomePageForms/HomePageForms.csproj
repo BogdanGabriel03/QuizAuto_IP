@@ -108,6 +108,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConcreteVisitors\ConcreteVisitors.csproj">
+      <Project>{fb2c5c2d-dfe6-47c9-adf6-91ca335c4f29}</Project>
+      <Name>ConcreteVisitors</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Controller\Controller.csproj">
       <Project>{d4587faa-5ff3-4d5d-aa5f-a764c60ede3a}</Project>
       <Name>Controller</Name>
@@ -115,6 +119,10 @@
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{1d7d8d8e-f4ba-4463-8785-36cb069adaee}</Project>
       <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisitorLibrary\VisitorLibrary.csproj">
+      <Project>{02e86c40-0675-45fd-b5f2-aea06b40b70d}</Project>
+      <Name>VisitorLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

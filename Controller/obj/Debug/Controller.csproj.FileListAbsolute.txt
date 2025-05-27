@@ -27,3 +27,5 @@ E:\QuizAuto_IP\Controller\obj\Debug\Controller.dll
 E:\QuizAuto_IP\Controller\obj\Debug\Controller.pdb
 E:\QuizAuto_IP\Controller\bin\Debug\Controller.xml
 E:\QuizAuto_IP\Controller\bin\Debug\Model.xml
+E:\QuizAuto_IP\Controller\bin\Debug\VisitorLibrary.dll
+E:\QuizAuto_IP\Controller\bin\Debug\VisitorLibrary.pdb

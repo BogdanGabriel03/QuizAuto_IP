@@ -1,7 +1,7 @@
 ﻿/**************************************************************************
  *                                                                        *
  *  File:        IntrebariForms.cs                                        *
- *  Copyright:   (c) 2025, Ioan Bogdan-Gabriel                            *
+ *  Copyright:   (c) 2025, Ciaușu Călin-Ioan                              *
  *                                                                        *
  *  Description: Responsible for the quiz pages and the user interactions *
  *                                                                        *

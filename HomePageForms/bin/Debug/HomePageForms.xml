@@ -50,6 +50,11 @@
             </summary>
             <param name="controller"> Instanțiază controller-ul</param>
         </member>
+        <member name="M:HomePageForms.HomePageForms.UpdateUI(System.String)">
+            <summary>
+            Schimbă interfața cu utilizatorul dacă acesta este conectat/deconectat
+            </summary>
+        </member>
         <member name="M:HomePageForms.HomePageForms.button1_Click(System.Object,System.EventArgs)">
             <summary>
             Funcția de callback a butonului de începere a chestionarului
@@ -137,6 +142,13 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="M:HomePageForms.LogInForms.#ctor(Controller.ChestionarController,HomePageForms.HomePageForms)">
+            <summary>
+            Constructor(ChestionarController controller, HomePageForms homePage)
+            </summary>
+            <param name="controller">Instanta controller-ului</param>
+            <param name="homePage">Instanta paginii de start parinte</param>
         </member>
         <member name="M:HomePageForms.LogInForms.button2_Click(System.Object,System.EventArgs)">
             <summary>

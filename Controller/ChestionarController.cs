@@ -19,10 +19,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using VisitorLibrary;
 
 namespace Controller
 {
-    public class ChestionarController
+    /// <summary>
+    /// Controller class based on the MVC model
+    /// </summary>
+    public class ChestionarController : IChestionarVisitable
     {
         #region Private Member Variables
         private Chestionar chestionar;
@@ -30,11 +34,16 @@ namespace Controller
         private string caleFisier = "intrebari.txt";
         private Random rand;
         private List<int> generated;
-        private bool timeUp;
+        private bool _timeUp;
         private int _nrAccesari;
+        private bool _loggedIn;
+        private string _username;
         #endregion
 
         #region Construcotrs
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public ChestionarController()
         {
             Intrebare[] intrebari = CitesteIntrebariDinFisier(caleFisier);
@@ -43,12 +52,17 @@ namespace Controller
             generated = new List<int>();
             indexIntrebareCurenta = rand.Next(53);
             _nrAccesari = 2;
+            _loggedIn = false;
             //generated.Add(indexIntrebareCurenta);
         }
         #endregion
 
         #region Public Methods
 
+        /// <summary>
+        /// Permite obținerea întrebării curente
+        /// </summary>
+        /// <returns> Intrebare sau null dacă quiz-ul s-a terminat, din orice motiv</returns>
         public Intrebare GetIntrebareCurenta()
         {
             if (!EsteTerminat())
@@ -59,7 +73,10 @@ namespace Controller
             else
                 return null;
         }
-
+        /// <summary>
+        /// Trimite răspunsul, îl verifică și incremetează contorul corespunzător
+        /// </summary>
+        /// <param name="varianteSelectate"> int[]; vector cu indecșii răspunsurilor selectate de utilizator</param>
         public void TrimiteRaspuns(int[] varianteSelectate)
         {
             if (EsteTerminat())
@@ -84,33 +101,61 @@ namespace Controller
 
             indexIntrebareCurenta = NextQuestion();
         }
-
+        /// <summary>
+        /// Returnează numărul de răspunsuri corecte
+        /// </summary>
+        /// <returns></returns>
         public int GetCorect()
         {
             return chestionar.Corect;
         }
-
+        /// <summary>
+        /// Retunrează numărul de răspunsuri greșite
+        /// </summary>
+        /// <returns></returns>
         public int GetGresit()
         {
             return chestionar.Gresit;
         }
-
+        /// <summary>
+        /// Verifică dacă chestionarul s-a terminat prin bifarea ultimei întrebări
+        /// </summary>
+        /// <returns></returns>
         public bool EsteTerminat()
         {
             return generated.Count > 26;
         }
+        /// <summary>
+        /// Resetează lista de indecși generați random
+        /// </summary>
         public void ClearList()
         {
             generated.Clear();
         }
+        /// <summary>
+        /// Resetează scorul
+        /// </summary>
         public void ClearScore()
         {
             chestionar.Corect = 0;
             chestionar.Gresit = 0;
         }
+        /// <summary>
+        /// Accept visitor
+        /// </summary>
+        /// <param name="visitor"> type of visitor </param>
+        public void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
         #endregion
 
         #region Private Methods
+        /// <summary>
+        /// Citește întrebările dintr-un fișier și returnează informația sub formă de vector de intrebări ( Intrebare[] )
+        /// </summary>
+        /// <param name="cale"></param>
+        /// <returns></returns>
         private Intrebare[] CitesteIntrebariDinFisier(string cale)
         {
             var listaIntrebari = new List<Intrebare>();
@@ -129,7 +174,10 @@ namespace Controller
 
             return listaIntrebari.ToArray();
         }
-
+        /// <summary>
+        /// Logica de selectare a următoarei întrebări aleatorii
+        /// </summary>
+        /// <returns></returns>
         private int NextQuestion()
         {
             int x;
@@ -142,8 +190,32 @@ namespace Controller
         #endregion
 
         #region Getter / Setters
-        public bool TimeUp {  get; set; }
+        /// <summary>
+        /// Getter/Setter pentru flagul de timp expirat
+        /// </summary>
+        public bool TimeUp { get { return _timeUp; } set { _timeUp = value; } }
+        /// <summary>
+        /// Getter/Setter pentru numărul posibil de accesări a chestionarului
+        /// </summary>
         public int NrAccesari { get { return _nrAccesari; } set { _nrAccesari = value; } }
+    
+        public bool LoggedIn 
+        { 
+            get { return _loggedIn; } 
+            set 
+            { 
+                if(_loggedIn != value)
+                {
+                    _loggedIn = value;
+                } 
+            } 
+        }
+
+        public string Username
+        {
+            get { return _username; }
+            set { _username = value; }
+        }
         #endregion
     }
 }
